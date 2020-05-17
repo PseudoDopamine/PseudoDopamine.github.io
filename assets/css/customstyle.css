@@ -1,0 +1,16 @@
+body.home {
+  height: 100vh;
+  background: url("/assets/images/TPDC-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#content {
+  height: 100%;
+}
+
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+#content {
+}
