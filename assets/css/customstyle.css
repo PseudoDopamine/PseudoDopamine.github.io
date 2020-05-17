@@ -53,10 +53,10 @@ a > i:hover {
 }
 
 @media only screen and (max-width: 576px) {
-  .countdown {
-    font-size: 1rem;
+  .countdown-cont * {
+    font-size: 1.5rem;
   }
   .countdown-text {
-    font-size: 12.2rem;
+    font-size: 1rem !important;
   }
 }
