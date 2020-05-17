@@ -6,9 +6,9 @@
 
 body.home {
   height: 100vh;
-  background: purple;
+  /* background: purple; */
   /* ! Actual background - change when publish */
-  background: url("/assets/images/TPDC-banner.png");
+  /* background: url("/assets/images/TPDC-banner.png"); */
   /* background: url("https://imgur.com/ThmOppE"); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,6 +27,10 @@ a > i {
 }
 a > i:hover {
   color: rgb(211, 211, 211);
+}
+
+.parallax-window {
+  width: 100%;
 }
 
 /*? End Global */
