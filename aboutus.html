@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -19,19 +19,27 @@
 
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
-    
+
     <link
       rel="stylesheet"
       href="assets/bootstrap/css/bootstrap-reboot.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/customstyle.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
   </head>
-  <body class="home">
+  <body class="main">
     <!-- NavBar -->
     <section id="navbar">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+      <nav class="navbar navbar-expand-md navbar-dark sticked-top bg-danger">
         <span class="navbar-logo">
           <a href="index.html">
             <img
@@ -58,15 +66,15 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+                >Home <span class="sr-only"></span
+              ></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="aboutus.html">About Us</a>
             </li>
           </ul>
@@ -74,52 +82,58 @@
       </nav>
     </section>
 
-    <!-- Content -->
-    <section id="content" class="container d-flex align-content-center justify-content-center">
-      <!-- Stream countdown -->
-      <div class="time-till-stream container d-flex flex-column align-content-center justify-content-center ">
-        <div class="container text-center">
-          <h2 class="pb-3 display-2 text-white">
-            Time till stream
-          </h2>
-          <h3 class="display-5 text-white">
-            Chill-19
-          </h3>
-        </div>
-        <div class="container countdown-cont align-center text-white">
-          <div
-            class="daysCountdown col-xs-3 col-sm-3 col-md-3"
-            title="Days"
-          ></div>
-          <div
-            class="hoursCountdown col-xs-3 col-sm-3 col-md-3"
-            title="Hours"
-          ></div>
-          <div
-            class="minutesCountdown col-xs-3 col-sm-3 col-md-3"
-            title="Minutes"
-          ></div>
-          <div
-            class="secondsCountdown col-xs-3 col-sm-3 col-md-3"
-            title="Seconds"
-          ></div>
-          <div class="countdown pt-5 mt-2" data-due-date="2020/05/21"></div>
-        </div>
-        <div class="socials d-flex justify-content-center align-items-center text-white">
-            <a href="https://discord.gg/zK2TS9n" class="text-white"><i class="fab fa-discord pr-3 icon"></i></a>
-            <h3 class="mb-0">Discord</h3>
-        </div>
+    <!-- Header -->
+    <div
+      id="header"
+      class="d-flex flex-column align-content-center justify-content-center p-4"
+    >
+      <div
+        class="container d-flex flex-column align-content-center justify-content-center text-center"
+      >
+        <h2 class="display-2 mb-0 text-white">
+          About Us
+        </h2>
+        <h3 class="display-5 text-white">
+          Everything you need to know :P
+        </h3>
       </div>
-      
-
-
+    </div>
+    <!-- Content -->
+    <section
+      id="content"
+      class="container d-flex flex-column align-content-center justify-content-start"
+    >
+      <!-- Cards -->
+      <div id="cards" class="row justify-content-center">
+        <div
+          class="card-container py-2 col-12 col-md-4 d-flex justify-content-center"
+        >
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="/assets/images/background1.jpg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ary Yakos - AKA n3z</h5>
+              <p class="card-text">
+                Founder of the group and just a general baddass.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">Owner</li>
+            </ul>
+            <div class="card-body text-center">
+              <a href="#" class="card-link">Discord</a>
+              <a href="#" class="card-link">email@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <section id="footer">
-
-    </section>
+    <section id="footer"></section>
 
     <!-- <section class="cid-rYGvHmyU2D" id="video2-4">
       <figure class="mbr-figure align-center">
@@ -137,10 +151,6 @@
         </div>
       </figure>
     </section> -->
-
-
-
-   
 
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>

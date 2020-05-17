@@ -8,11 +8,12 @@ body.home {
   height: 100vh;
   background: purple;
   /* ! Actual background - change when publish */
-  /* background: url("/assets/images/TPDC-banner.png"); */
+  background: url("/assets/images/TPDC-banner.png");
   /* background: url("https://imgur.com/ThmOppE"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #content {
   height: 100%;
 }
@@ -35,4 +36,17 @@ a > i:hover {
 /* Icon size */
 .icon {
   font-size: 2rem;
+}
+
+/*? Main Pages */
+#header {
+  height: auto;
+  /* background: url("/assets/images/TPDC-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+body.main {
+  background: url("/assets/images/TPDC-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
