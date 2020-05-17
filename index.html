@@ -39,6 +39,34 @@
         
       }
       
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin:0;
+        overflow: hidden;
+        display:flex;
+        background-color:  #1B1B1B;
+        justify-content:space-around;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: flex;
+        justify-content:space-around;
+        color: white;
+        padding-bottom: 17px;
+        padding-top: 17px;
+        text-align: relative;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #141414;
+      }
+       
       /*textflicker {
         from {
         text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
@@ -47,30 +75,6 @@
         text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
            }
               }*/
-      
-      .about_us_btn{
-        
-        position:relative;
-        top:20%;
-        left:auto;
-        transform: translate(60%, -15%);
-        -ms-transform: translate(60%, -15%);
-        background-color:transparent;
-        color:white;
-        font-size: 30px;
-        padding: 16px 30px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: relative;
-        font-family: 'Comfortaa', cursive;
-      }
-      
-      .about_us_btn:hover {
-        background-color: transparent;
-        color: #1B1B1B;
-      }
-      
       
       
       @media only screen and (max-width: 1000px) {
@@ -122,6 +126,12 @@
     </style>
   </head>
   <body>
-    <button class="about_us_btn">About Us</button>
+    <nav>
+    <ul>
+      <li><a href="AboutUs.html">About us</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Join us">Join us!</a></li>
+    </ul>
+    </nav>
   </body>
 </html>
