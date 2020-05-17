@@ -6,6 +6,7 @@
     <meta http-equiv="content-language" content="en-gb" />
     <meta name="description" content="A collective group of chill gamers who also make code. This is the official site of The Pseudo Dopamine Centre." />
     <meta name="keywords" content="The Pseudo Dopamine Centre" />
+    <meta name="google-site-verification" content="ICj5ycluk6Rs9EMo73U_zf15iZ3PWb6BfEUnxJzA1hw" />
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" rel="stylesheet" />
@@ -21,38 +22,56 @@
       }
       
       body {
-          background-color: #1B1B1B;
-          margin: 0;
+          background-image: url('https://media.giphy.com/media/cn9ZiMcWwrr1ZVW9hb/giphy.gif');
+          background-size:cover;
+          background-position: center;
+          height: 100vh;
+          padding:0;
+          margin:0;
+          background-repeat:no-repeat;
       }
       
-      h1, h2 {
-        font-family:'Bungee', cursive;
-      }
-      
-      /*banner box*/
-      .banner {
-          border-bottom: 5px solid;
-          font-size: 1.5rem;
-          height: 360px;
-          padding: 100px 10px 10px 10px;
-      }
-      
-      /*Content box*/
       .container {
-          border: 5px dashed;
-          margin: 1em auto;
-          padding: 10px;
-          width: 1000px;
+        
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        
       }
       
-      .banner, .container {
-          border-color: #F8F8F8;
-          color: #F8F8F8;
+      /*textflicker {
+        from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+              }
+        to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+           }
+              }*/
+      
+      .about_us_btn{
+        
+        position:relative;
+        top:20%;
+        left:auto;
+        transform: translate(60%, -15%);
+        -ms-transform: translate(60%, -15%);
+        background-color:transparent;
+        color:white;
+        font-size: 30px;
+        padding: 16px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: relative;
+        font-family: 'Comfortaa', cursive;
       }
       
-      .banner, .container h2 {
-          text-align: center;
+      .about_us_btn:hover {
+        background-color: transparent;
+        color: #1B1B1B;
       }
+      
+      
       
       @media only screen and (max-width: 1000px) {
           html {
@@ -103,15 +122,6 @@
     </style>
   </head>
   <body>
-    <main>
-      <div class="banner">
-        <h1>The Pseudo Dopamine Centre</h1>
-        <span>A collective group of chill gamers who also make code.</span>
-      </div>
-      <div class="container">
-        <h2>Bear with us!</h2>
-        <p>Hey there! Thanks for taking an interest in our site. We're currently working on a design and it'll take some time before it's all up and running. We'll be ready and online soon!</p>
-      </div>
-    </main>
+    <button class="about_us_btn">About Us</button>
   </body>
 </html>
