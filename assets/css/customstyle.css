@@ -1,6 +1,7 @@
 body.home {
   height: 100vh;
   background: purple;
+  /* ! Actual background - change when publish */
   /* background: url("/assets/images/TPDC-banner.png"); */
   /* background: url("https://imgur.com/ThmOppE"); */
   background-repeat: no-repeat;
