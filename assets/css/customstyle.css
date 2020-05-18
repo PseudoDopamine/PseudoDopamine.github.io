@@ -47,13 +47,13 @@ a > i:hover {
 }
 
 /*? Navbar */
-.fixed-top {
+/* .fixed-top {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
 /*? Title Screen */
 #header {
