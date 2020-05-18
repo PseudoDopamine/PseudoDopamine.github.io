@@ -3,6 +3,21 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+header a, h2 {
+  font-family: "Bungee", cursive;
+}
+
+footer {
+  background-color: #141414;
+  padding: 15px;
+}
+
+.footer-container {
+  width: 350px;
+  margin: 0 auto;
+}
+
 * {
   font-family: "Comfortaa", cursive;
 }
