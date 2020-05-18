@@ -74,7 +74,8 @@ a > i:hover {
   .sub-text {
     font-size: 1.5rem !important;
   }
-  .content-title {
+  .content-title,
+  .title {
     font-size: 4rem;
   }
 }
