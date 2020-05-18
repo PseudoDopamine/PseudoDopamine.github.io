@@ -4,18 +4,9 @@ html {
   overflow-x: hidden;
 }
 
-header a, h2 {
+header a,
+h2 {
   font-family: "Bungee", cursive;
-}
-
-footer {
-  background-color: #141414;
-  padding: 15px;
-}
-
-.footer-container {
-  width: 350px;
-  margin: 0 auto;
 }
 
 * {
@@ -107,4 +98,14 @@ a > i:hover {
 .flipdown.flipdown__theme-dark
   .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
   background-color: white !important;
+}
+
+/*? Footer */
+#discord-widget {
+  width: 100%;
+}
+
+footer {
+  background-color: #202225;
+  padding: 15px;
 }
