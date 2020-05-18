@@ -65,3 +65,17 @@ a > i:hover {
     font-size: 1rem !important;
   }
 }
+
+/* Countdown text color */
+.flipdown * {
+  color: white !important;
+}
+.rotor-group-heading:before {
+  color: white !important;
+}
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):before,
+.flipdown.flipdown__theme-dark
+  .rotor-group:nth-child(n + 2):nth-child(-n + 3):after {
+  background-color: white !important;
+}

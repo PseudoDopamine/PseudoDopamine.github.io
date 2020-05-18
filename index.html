@@ -38,6 +38,11 @@
     />
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Flip down -->
+    <link rel="stylesheet" href="assets/flipdown/flipdown.css" />
+
+    <script src="assets/flipdown/flipdown.js"></script>
   </head>
   <body class="home">
     <!-- Navbar -->
@@ -105,36 +110,11 @@
             Chill-19
           </h3>
         </div>
-        <div
-          class="container d-none d-md-block countdown-cont align-center text-white"
-          data-aos="flip-up"
-        >
+        <div class="d-flex justify-content-center" stlye="width: 100vw;">
           <div
-            class="daysCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Days"
+            id="flipdown"
+            class="flipdown text-center align-self-center"
           ></div>
-          <div
-            class="hoursCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Hours"
-          ></div>
-          <div
-            class="minutesCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Minutes"
-          ></div>
-          <div
-            class="secondsCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Seconds"
-          ></div>
-          <div class="countdown pt-5 mt-2" data-due-date="2020/05/21"></div>
-        </div>
-        <div
-          class="socials d-flex justify-content-center align-items-center text-white"
-          data-aos="zoom-in"
-        >
-          <a href="https://discord.gg/zK2TS9n" class="text-white">
-            <i class="fab fa-discord pr-3 icon"></i>
-          </a>
-          <h3 class="mb-0">Discord</h3>
         </div>
       </section>
 
@@ -326,6 +306,8 @@
     <!-- AOS - Animate on scroll libary (slide in when scrolled etc) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
     <!-- Run AOS -->
     <script>
       AOS.init();
