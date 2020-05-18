@@ -1,5 +1,7 @@
 /*? Global */
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: "Comfortaa", cursive;
 }
