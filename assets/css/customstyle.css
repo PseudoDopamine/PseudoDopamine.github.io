@@ -73,6 +73,10 @@ a > i:hover {
   height: 100vh;
 }
 
+h3 .fundraiser-wrapper {
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 576px) {
   .countdown-cont * {
     font-size: 1.5rem;
