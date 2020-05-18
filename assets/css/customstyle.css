@@ -105,9 +105,6 @@ h3 .fundraiser-wrapper {
 }
 
 /* About us cards */
-#cards .card-container {
-  align-self: flex-start !important;
-}
 
 /*? Footer */
 #discord-widget {
