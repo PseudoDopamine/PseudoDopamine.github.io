@@ -31,6 +31,7 @@
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="home">
     <!-- Navbar -->
@@ -83,19 +84,24 @@
       id="content"
       class="d-flex flex-column align-content-center justify-content-center"
     >
-      <!-- Stream countdown -->
-      <div
+      <!-- * Stream countdown -->
+      <section
         id="title-container"
         class="d-flex flex-column align-content-center justify-content-center parallax-window"
         data-parallax="scroll"
         data-image-src="https://source.unsplash.com/bX9B9c-YasY"
       >
         <div class="container text-center time-till-stream">
-          <h2 class="pb-3 display-2 text-white title">Time till stream</h2>
-          <h3 class="display-5 text-white subtitle">Chill-19</h3>
+          <h2 class="pb-3 display-2 text-white title" data-aos="fade-down">
+            Time till stream
+          </h2>
+          <h3 class="display-5 text-white subtitle" data-aos="fade-up">
+            Chill-19
+          </h3>
         </div>
         <div
           class="container d-none d-md-block countdown-cont align-center text-white"
+          data-aos="flip-up"
         >
           <div
             class="daysCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
@@ -117,16 +123,17 @@
         </div>
         <div
           class="socials d-flex justify-content-center align-items-center text-white"
+          data-aos="zoom-in"
         >
           <a href="https://discord.gg/zK2TS9n" class="text-white">
             <i class="fab fa-discord pr-3 icon"></i>
           </a>
           <h3 class="mb-0">Discord</h3>
         </div>
-      </div>
+      </section>
 
       <!-- * Start of About Page -->
-      <div
+      <section
         id="about-container"
         class="parallax-window"
         data-parallax="scroll"
@@ -135,8 +142,18 @@
         <div
           class="container d-flex flex-column align-content-center justify-content-center text-center py-5"
         >
-          <h2 class="display-2 mb-0 text-white">About Us</h2>
-          <h3 class="display-5 text-white">
+          <h2
+            class="display-2 mb-0 text-white"
+            data-aos="fade-down"
+            data-aos-anchor="#about-container"
+          >
+            About Us
+          </h2>
+          <h3
+            class="display-5 text-white"
+            data-aos="fade-up"
+            data-aos-anchor="#about-container"
+          >
             The Pseudo Dopamine Centre is a small Discord community of
             programmers, content creators, and above all, gamers.
           </h3>
@@ -147,7 +164,7 @@
           <div
             class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
           >
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img
                 class="card-img-top"
                 src="assets/images/background1.jpg"
@@ -172,7 +189,7 @@
           <div
             class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
           >
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img
                 class="card-img-top"
                 src="assets/images/background2.jpg"
@@ -207,7 +224,7 @@
           <div
             class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
           >
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img
                 class="card-img-top"
                 src="assets/images/background3.jpg"
@@ -237,7 +254,7 @@
           <div
             class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
           >
-            <div class="card">
+            <div class="card" data-aos="flip-up">
               <img
                 class="card-img-top"
                 src="assets/images/background4.jpg"
@@ -269,7 +286,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -296,5 +313,12 @@
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/countdown/jquery.countdown.min.js"></script>
     <script src="assets/web/assets/parallax/parallax.min.js"></script>
+
+    <!-- AOS - Animate on scroll libary (slide in when scrolled etc) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
