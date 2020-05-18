@@ -86,8 +86,12 @@ a > i:hover {
   .countdown-cont * {
     font-size: 1.5rem;
   }
-  .countdown-text {
-    font-size: 1rem !important;
+  .sub-text {
+    font-size: 1.5rem !important;
+  }
+  .content-title,
+  .title {
+    font-size: 4rem;
   }
 }
 
