@@ -1,6 +1,7 @@
 /*? Global */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 * {
   font-family: "Comfortaa", cursive;
@@ -43,6 +44,15 @@ a > i:hover {
 /* Icon size */
 .icon {
   font-size: 2rem;
+}
+
+/*? Navbar */
+.fixed-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 /*? Title Screen */
