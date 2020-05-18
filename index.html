@@ -3,273 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <link
-      rel="shortcut icon"
-      href="assets/images/dopamine-chemical-structure-122x64.png"
-      type="image/x-icon"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta name="description" content="" />
-
-    <title>PseudoDopamine Centre</title>
-
+    <title>The Pseudo Dopamine Centre</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
-
-    <link
-      rel="stylesheet"
-      href="assets/bootstrap/css/bootstrap-reboot.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="assets/css/customstyle.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/images/dopamine-chemical-structure-122x64.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" rel="stylesheet" />
   </head>
   <body class="home">
-    <!-- NavBar -->
-    <section id="navbar">
+    <!-- Navbar -->
+    <header id="navbar">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
         <span class="navbar-logo px-2">
           <a href="index.html">
-            <img
-              src="assets/images/dopamine-white.png"
-              alt="Logo"
-              title=""
-              style="height: 3rem;"
-            />
+            <img src="assets/images/dopamine-white.png" alt="Logo" title="" style="height: 3rem;" />
           </a>
         </span>
-        <a class="navbar-brand d-none d-md-flex" href="index.html">
-          Pseudo Dopamine Center</a
-        >
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand d-none d-md-flex" href="index.html">The Pseudo Dopamine Centre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about-container">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link">Projects</a>
             </li>
           </ul>
         </div>
       </nav>
-    </section>
-
+    </header>
+    
     <!-- Content -->
-    <section
-      id="content"
-      class="d-flex flex-column align-content-center justify-content-center"
-    >
+    <main id="content" class="d-flex flex-column align-content-center justify-content-center">
       <!-- Stream countdown -->
-      <div
-        id="title-container"
-        class="d-flex flex-column align-content-center justify-content-center parallax-window"
-        data-parallax="scroll"
-        data-image-src="https://source.unsplash.com/bX9B9c-YasY"
-      >
+      <div id="title-container" class="d-flex flex-column align-content-center justify-content-center parallax-window" data-parallax="scroll" data-image-src="https://source.unsplash.com/bX9B9c-YasY">
         <div class="container text-center time-till-stream">
-          <h2 class="pb-3 display-2 text-white title">
-            Time till stream
-          </h2>
-          <h3 class="display-5 text-white subtitle">
-            Chill-19
-          </h3>
+          <h2 class="pb-3 display-2 text-white title">Time till stream</h2>
+          <h3 class="display-5 text-white subtitle">Chill-19</h3>
         </div>
-        <div
-          class="container d-none d-md-block countdown-cont align-center text-white"
-        >
-          <div
-            class="daysCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Days"
-          ></div>
-          <div
-            class="hoursCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Hours"
-          ></div>
-          <div
-            class="minutesCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Minutes"
-          ></div>
-          <div
-            class="secondsCountdown countdown-text col-xs-3 col-sm-3 col-md-3"
-            title="Seconds"
-          ></div>
+        <div class="container d-none d-md-block countdown-cont align-center text-white">
+          <div class="daysCountdown countdown-text col-xs-3 col-sm-3 col-md-3" title="Days"></div>
+          <div class="hoursCountdown countdown-text col-xs-3 col-sm-3 col-md-3" title="Hours"></div>
+          <div class="minutesCountdown countdown-text col-xs-3 col-sm-3 col-md-3" title="Minutes"></div>
+          <div class="secondsCountdown countdown-text col-xs-3 col-sm-3 col-md-3" title="Seconds" ></div>
           <div class="countdown pt-5 mt-2" data-due-date="2020/05/21"></div>
         </div>
-        <div
-          class="socials d-flex justify-content-center align-items-center text-white"
-        >
-          <a href="https://discord.gg/zK2TS9n" class="text-white"
-            ><i class="fab fa-discord pr-3 icon"></i
-          ></a>
+        <div class="socials d-flex justify-content-center align-items-center text-white">
+          <a href="https://discord.gg/zK2TS9n" class="text-white">
+            <i class="fab fa-discord pr-3 icon"></i>
+          </a>
           <h3 class="mb-0">Discord</h3>
         </div>
       </div>
 
       <!-- * Start of About Page -->
-
-      <div
-        id="about-container"
-        class="parallax-window"
-        data-parallax="scroll"
-        data-image-src="https://source.unsplash.com/sE97eb0WhGI"
-      >
-        <div
-          class="container d-flex flex-column align-content-center justify-content-center text-center py-5"
-        >
-          <h2 class="display-2 mb-0 text-white">
-            About Us
-          </h2>
-          <h3 class="display-5 text-white">
-            The Pseudo Dopamine Centre is a small Discord community of
-            programmers, content creators, and above all, gamers.
-          </h3>
+      <div id="about-container" class="parallax-window" data-parallax="scroll" data-image-src="https://source.unsplash.com/sE97eb0WhGI">
+        <div class="container d-flex flex-column align-content-center justify-content-center text-center py-5">
+          <h2 class="display-2 mb-0 text-white">About Us</h2>
+          <h3 class="display-5 text-white">The Pseudo Dopamine Centre is a small Discord community of programmers, content creators, and above all, gamers.</h3>
         </div>
         <!-- Cards -->
         <div id="cards" class="row justify-content-around px-4 py-3">
-          <!-- Single Card -->
-          <div
-            class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
-          >
+          <!-- Card 1 -->
+          <div class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="assets/images/background1.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="assets/images/background1.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Ary Yakos - AKA n3z</h5>
-                <p class="card-text">
-                  Founder of the group and just a general baddass.
-                </p>
+                <p class="card-text">Founder of the group and just a general baddass.</p>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-center">Owner</li>
                 <li class="list-group-item text-center">Discord: n3zz#9555</li>
-                <li class="list-group-item text-center">
-                  Email: email@gmail.com
-                </li>
+                <li class="list-group-item text-center">Email: email@gmail.com</li>
               </ul>
             </div>
           </div>
           <!-- Card 2 -->
-          <div
-            class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
-          >
+          <div class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="assets/images/background1.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="assets/images/background1.jpg" alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Ary Yakos - AKA n3z</h5>
-                <p class="card-text">
-                  Founder of the group and just a general baddass.
-                </p>
+                <h5 class="card-title">Ramone Graham - A.K.A Sweetboy13735</h5>
+                <p class="card-text">Aspiring programmer, founder of HyperByte Industries and a proud gamer.</p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center">Owner</li>
-                <li class="list-group-item text-center">Discord: n3zz#9555</li>
+                <li class="list-group-item text-center">GitHub Director</li>
+                <li class="list-group-item text-center">Discord: Sweetboy13735#2026</li>
                 <li class="list-group-item text-center">
-                  Email: email@gmail.com
+                  <a href="https://Sweetboy13735.github.io">Official Website</a>
+                  |
+                  <a href="https://HyperByteIndustries.github.io">HyperByte Industries</a>
                 </li>
+                <li class="list-group-item text-center">Email: ramonegraham@gmail.com</li>
               </ul>
             </div>
           </div>
           <!-- Card 3 -->
-          <div
-            class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
-          >
+          <div class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="assets/images/background1.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="assets/images/background1.jpg" alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Ary Yakos - AKA n3z</h5>
-                <p class="card-text">
-                  Founder of the group and just a general baddass.
-                </p>
+                <h5 class="card-title">Aurora</h5>
+                <p class="card-text">Responsible for the original designs of the site. Hella good with t e h c.</p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center">Owner</li>
-                <li class="list-group-item text-center">Discord: n3zz#9555</li>
-                <li class="list-group-item text-center">
-                  Email: email@gmail.com
-                </li>
+                <li class="list-group-item text-center">Service Performance Director</li>
+                <li class="list-group-item text-center">Discord: Aurora#8008</li>
+                <li class="list-group-item text-center">Email: email@gmail.com</li>
               </ul>
             </div>
           </div>
           <!-- Card 4 -->
-          <div
-            class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center"
-          >
+          <div class="card-container py-2 col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
             <div class="card">
-              <img
-                class="card-img-top"
-                src="assets/images/background4.jpg"
-                alt="Card image cap"
-              />
+              <img class="card-img-top" src="assets/images/background4.jpg" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Aaron - (BurntWindow)</h5>
-                <p class="card-text">
-                  Helped to put this site together, and just a genuine bangout.
-                </p>
+                <p class="card-text">Helped to put this site together, and just a genuine bangout.</p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center">
-                  Programmer and Gamer
-                </li>
-                <li class="list-group-item text-center">
-                  Discord: BurntWindow#3499
-                </li>
-                <li class="list-group-item text-center">
-                  CEO Of Hourglass Programs
-                </li>
-                <li class="list-group-item text-center">
-                  aaron@hourglassprograms.com
-                </li>
+                <li class="list-group-item text-center">Programmer and Gamer</li>
+                <li class="list-group-item text-center">Discord: BurntWindow#3499</li>
+                <li class="list-group-item text-center">CEO Of Hourglass Programs</li>
+                <li class="list-group-item text-center">aaron@hourglassprograms.com</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <section id="footer"></section>
-
+    <footer id="footer"></footer>
     <!-- <section class="cid-rYGvHmyU2D" id="video2-4">
       <figure class="mbr-figure align-center">
         <div class="video-block" style="width: 100%;">
@@ -286,12 +162,10 @@
         </div>
       </figure>
     </section> -->
-
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
-
     <script src="assets/countdown/jquery.countdown.min.js"></script>
     <script src="assets/web/assets/parallax/parallax.min.js"></script>
   </body>

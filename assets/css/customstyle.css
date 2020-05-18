@@ -16,6 +16,7 @@ body.home {
 #content {
   height: 100%;
 }
+
 a {
   text-decoration: none;
 }
@@ -24,6 +25,7 @@ a {
 a > i {
   color: white;
 }
+
 a > i:hover {
   color: rgb(211, 211, 211);
 }
@@ -48,6 +50,7 @@ a > i:hover {
   background-repeat: no-repeat;
   background-size: cover; */
 }
+
 #title-container {
   height: 100vh;
 }
