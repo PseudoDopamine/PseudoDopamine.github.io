@@ -100,6 +100,11 @@ a > i:hover {
   background-color: white !important;
 }
 
+/* About us cards */
+#cards .card-container {
+  align-self: baseline !important;
+}
+
 /*? Footer */
 #discord-widget {
   width: 100%;
