@@ -1,120 +1,187 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Pseudo Dopamine Centre | Official site</title>
-    <meta http-equiv="author" content="Ramone Graham, Ary Yakos (n3z)" />
-    <meta http-equiv="content-language" content="en-gb" />
-    <meta name="description" content="A collective group of chill gamers who also make code. This is the official site of The Pseudo Dopamine Centre." />
-    <meta name="keywords" content="The Pseudo Dopamine Centre" />
-    <meta name="google-site-verification" content="ICj5ycluk6Rs9EMo73U_zf15iZ3PWb6BfEUnxJzA1hw" />
-    <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
-    <link href="./favicon.ico" type="image/x-icon" rel="icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="" />
+    <title>The Pseudo Dopamine Centre</title>
+    <!-- Bootstrap Assets -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="assets/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="assets/css/customstyle.css" rel="stylesheet" />
+    <!-- Icon fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" rel="stylesheet" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <!-- Sets logo -->
+    <link href="assets/images/dopamine-chemical-structure-122x64.png" type="image/x-icon" rel="shortcut icon" />
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" rel="stylesheet" />
-    <style>
-      * {
-          box-sizing: border-box;
-      }
-      
-      html {
-          border-color: #F8F8F8;
-          color: #F8F8F8;
-          font-family: "Comfortaa", cursive;
-          font-size: 20px;
-          line-height: 25px;
-      }
-      
-      body {
-          background-color: #1A1B29;
-          margin: 0;
-      }
-      
-      h1, h2 {
-        font-family: "Bungee", cursive;
-      }
-      
-      /* Site banner */
-      .banner {
-          background-image: url("res/img/banners/TPDC_1.png");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          border-bottom: 5px solid;
-          font-size: 1.5rem;
-          height: 360px;
-          padding: 100px 10px 10px 10px;
-      }
-      
-      /* Main content box */
-      .container {
-          background-color: rgba(27, 27, 27, 0.75);
-          border: 5px dashed;
-          margin: 1em auto;
-          padding: 10px;
-          width: 1000px;
-      }
-      
-      .banner, .container h2 {
-          text-align: center;
-      }
-      
-      @media only screen and (max-width: 1000px) {
-          html {
-              font-size: 15px;
-          }
-          
-          .banner {
-              height: 240px;
-              padding-top: 50px;
-          }
-          
-          .container {
-              width: 750px;
-          }
-      }
-      
-      @media only screen and (max-width: 750px) {
-          html {
-              font-size: 10px;
-              line-height: 15px;
-          }
-          
-          .banner {
-              height: 144px;
-              padding-top: 24px;
-          }
-          
-          .container {
-              width: 500px;
-          }
-      }
-      
-      @media only screen and (max-width: 500px) {
-          .banner {
-              padding-top: 18px;
-          }
-          
-          .container {
-              width: 95%;
-          }
-      }
-      
-      @media only screen and (max-width: 360px) {
-          html {
-              font-size: 4px;
-          }
-      }
-    </style>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Flip down -->
+    <link href="assets/flipdown/flipdown.css" rel="stylesheet" />
   </head>
-  <body>
-    <main>
-      <div class="banner">
-        <h1>The Pseudo Dopamine Centre</h1>
-        <span>A collective group of chill gamers who also make code.</span>
-      </div>
-      <div class="container">
-        <h2>Bear with us!</h2>
-        <p>Hey there! Thanks for taking an interest in our site. We're currently working on a design and it'll take some time before it's all up and running. We'll be ready and online soon!</p>
-      </div>
+  <body class="home" data-spy="scroll" data-target="#navbar" data-offset="40">
+    <!-- data-spy - used to change the active state of the nav bar depending on where the user currently has scrolled to-->
+    <!-- Navbar -->
+    <header id="navbar">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+        <span class="navbar-logo px-2">
+          <a href="index.html">
+            <img src="assets/images/dopamine-white.png" alt="Logo" title="" style="height: 3rem;" />
+          </a>
+        </span>
+        <a class="navbar-brand d-none d-md-flex" href="index.html">The Pseudo Dopamine Centre</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#title-container">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-container">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!--* Content -->
+    <!-- Where all the content of the page will go -->
+    <main id="content" class="d-flex flex-column align-content-center justify-content-center">
+      <!-- * Stream countdown -->
+      <section id="title-container" class="d-flex flex-column align-content-center justify-content-center parallax-window" data-parallax="scroll" data-image-src="https://source.unsplash.com/bX9B9c-YasY">
+        <div class="container text-center time-till-stream">
+          <h2 class="pb-3 display-2 text-white title" data-aos="fade-down">Time till stream</h2>
+          <h3 class="display-5 text-white sub-text" data-aos="fade-up">Chill-19</h3>
+        </div>
+        <div class="d-flex justify-content-center" stlye="width: 100vw;">
+          <div id="flipdown" class="flipdown text-center align-self-center"></div>
+        </div>
+        <div class="socials text-center d-flex align-content-center justify-content-center text-white py-4">
+          <a href="https://discord.gg/zK2TS9n" class="text-white">
+            <i class="fab fa-discord pr-3 icon"></i>
+          </a>
+          <a href="https://discord.gg/zK2TS9n" class="text-white">
+            <h3 class="mb-0">Join the Discord!</h3>
+          </a>
+        </div>
+      </section>
+      <!-- * Start of About Page -->
+      <section id="about-container" class="parallax-window" data-parallax="scroll" data-image-src="https://source.unsplash.com/sE97eb0WhGI">
+        <div class="container d-flex flex-column align-content-center justify-content-center text-center pt-5 pb-3 pb-md-5">
+          <h2 class="display-2 mb-0 text-white content-title" data-aos="fade-down" data-aos-anchor="#about-container">About Us</h2>
+          <h3 class="display-5 text-white sub-text" data-aos="fade-up" data-aos-anchor="#about-container">The Pseudo Dopamine Centre is a small Discord community of programmers, content creators, and above all, gamers.</h3>
+        </div>
+        <!--* Cards -->
+        <div id="cards" class="row justify-content-around px-4 py-3">
+          <!-- Card 1 -->
+          <div class="card-container py-2 col-12 col-md-4 col-lg-3 d-flex justify-content-center align-self-center">
+            <div class="card" data-aos="zoom-in" data-aos-anchor="#about-container">
+              <img class="card-img-top d-none d-md-block" src="assets/images/TPDC-banner.png" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Ary Yakos - AKA n3z</h5>
+                <p class="card-text">Founder of the group and just a general baddass.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">Owner</li>
+                <li class="list-group-item text-center">Discord: n3zz#9555</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card-container py-2 col-12 col-md-4 col-lg-3 d-flex justify-content-center align-self-center">
+            <div class="card" data-aos="zoom-in" data-aos-anchor="#about-container">
+              <img class="card-img-top d-none d-md-block" src="assets/images/Sweetboy-Channel-art.png" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Ramone Graham - A.K.A Sweetboy13735</h5>
+                <p class="card-text">Aspiring programmer, founder of HyperByte Industries and a proud gamer.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">GitHub Director</li>
+                <li class="list-group-item text-center">Discord: Sweetboy13735#2026</li>
+                <li class="list-group-item text-center">
+                  <a href="https://Sweetboy13735.github.io" target="_blank">Official Website</a>
+                  |
+                  <a href="https://HyperByteIndustries.github.io" target="_blank">HyperByte Industries</a>
+                </li>
+                <li class="list-group-item text-center">
+                  <a href="mailto:ramonegraham@gmail.com">ramonegraham@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card-container py-2 col-12 col-md-4 col-xl-3 d-flex justify-content-center align-self-center">
+            <div class="card" data-aos="zoom-in" data-aos-anchor="#about-container">
+              <img class="card-img-top d-none d-md-block" src="assets/images/Aurora-pixel-art.png" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Aurora</h5>
+                <p class="card-text">Responsible for the original designs of the site. Hella good with t e h c.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">Service Performance Director</li>
+                <li class="list-group-item text-center">Discord: Aurora#8008</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card-container py-2 col-12 col-md-4 col-lg-3 d-flex justify-content-center align-self-center">
+            <div class="card" data-aos="zoom-in" data-aos-anchor="#about-container">
+              <img class="card-img-top d-none d-md-block" src="assets/images/aaron-background.png" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Aaron - A.K.A BurntWindow</h5>
+                <p class="card-text">Helped to put this site together, and just a genuine bangout.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-center">Programmer and Gamer</li>
+                <li class="list-group-item text-center">Discord: BurntWindow#3499</li>
+                <li class="list-group-item text-center">
+                  Founder Of
+                  <a href="http://www.hourglassprograms.com" target="_blank">Hourglass Programs</a>
+                </li>
+                <li class="list-group-item text-center">
+                  <a href="mailto:aaron@hourglassprograms.com">aaron@hourglassprograms.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    
+    <footer>
+      <div class="footer-container d-flex flex-column justify-content-center text-center">
+        <h2 class="text-white">Join us on Discord!</h2>
+        <div class="container">
+          <iframe id="discord-widget" src="https://discordapp.com/widget?id=556908017594138646&theme=dark" width="500" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- jQuery Lib -->
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <!-- Popper.js - needed for Bootstrap -->
+    <script src="assets/popper/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/countdown/jquery.countdown.min.js"></script>
+    <!-- Parallax Libary - For background -->
+    <script src="assets/web/assets/parallax/parallax.min.js"></script>
+    <!-- AOS - Animate on scroll libary (slide in when scrolled etc) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Flipdown -->
+    <script src="assets/flipdown/flipdown.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+    <!-- Run AOS -->
+    <script>AOS.init();</script>
   </body>
 </html>
