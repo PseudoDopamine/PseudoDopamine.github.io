@@ -102,7 +102,7 @@ a > i:hover {
 
 /* About us cards */
 #cards .card-container {
-  align-self: baseline !important;
+  align-self: flex-start !important;
 }
 
 /*? Footer */
