@@ -13,12 +13,78 @@
     <!-- Resource links -->
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="style.css" rel="stylesheet"/>
+    
+    <!-- Page-specific styling -->
+    <style>
+      /* Global styles */
+      @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap');
+      
+      * {
+          box-sizing: border-box;
+      }
+      
+      html {
+          color: #F8F8F8;
+          font-family: Comfortaa, cursive;
+          font-size: 20px;
+          line-height: 1.25;
+      }
+      
+      body {
+          background: url("res/assets/img/logos/TPDC_Banner.png") center/cover no-repeat;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+          font-family: Bungee, cursive;
+      }
+      
+      a {
+          color: #F8F8F8;
+          text-decoration: none;
+          transition: all 150ms ease;
+      }
+      
+      a:hover {
+          text-decoration: underline;
+      }
+      
+      /* Navbar styles */
+      nav {
+          background-color: #1B1B1B;
+          height: 75px;
+          position: fixed;
+          width: 100%;
+          z-index: 1;
+      }
+      
+      ul.nav-menu {
+          align-items: center;
+          display: flex;
+          height: 100%;
+          list-style: none;
+          justify-content: space-evenly;
+          margin: 0;
+          padding: 0;
+      }
+      
+      .nav-menu a {
+          border: 3px solid #141414;
+          border-radius: 7.5px;
+          padding: 7.5px 15px;
+      }
+      
+      .nav-menu a:hover {
+          border-color: #F8F8F8;
+      }
+    </style>
   </head>
-  <body class="landing_page">
+  <body>
     <!-- Navbar structure -->
     <nav>
-      <ul>
+      <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
         <li><a href="projects.html">Projects</a></li>
