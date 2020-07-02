@@ -1,0 +1,17 @@
+body{
+    background-color: #141414;
+}
+
+h1{
+    color:#f8f8f8;
+}
+
+.box{
+
+    border:dashed;
+    border-color:#f8f8f8;
+}
+
+p{
+    color:#f8f8f8;
+}
