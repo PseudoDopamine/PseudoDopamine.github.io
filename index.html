@@ -66,6 +66,37 @@
       main h1 {
           margin-top: 0;
       }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 1250px) {
+          main {
+              width: 95%;
+              top: calc(50vh - 126.8px/2);
+          }
+      }
+      
+      @media only screen and (max-width: 656px) {
+          main {
+              top: calc(50vh - 151.8px/2);
+          }
+      }
+      
+      @media only screen and (max-width: 428px) {
+          html {
+              font-size: 15px;
+              line-height: 1.333333333;
+          }
+          
+          main {
+              top: calc(50vh - 116.09px/2);
+          }
+      }
+      
+      @media only screen and (max-width: 321px) {
+          main {
+              top: calc(50vh - 135.09px/2);
+          }
+      }
     </style>
   </head>
   <body>
