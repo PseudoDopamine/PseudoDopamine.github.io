@@ -28,82 +28,104 @@
           font-family: Comfortaa, cursive;
           font-size: 20px;
           line-height: 1.25;
+          text-align: center;
       }
       
       body {
-          background: url("./res/assets/img/banners/TPDC_No_text.png") center / cover no-repeat;
-          height: 100vh;
+          background-color: #141414;
           margin: 0;
           padding: 0;
-          width: 100%;
-      }
-      
-      body::before {
-          background-color: #141414;
-          content: "";
-          display: block;
-          height: 100vh;
-          opacity: 0.75;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          z-index: -1;
       }
       
       h1, h2, h3, h4, h5, h6 {
           font-family: Bungee, cursive;
       }
       
-      /* Main content styles */
-      main {
+      .container {
           margin: 0 auto;
-          position: relative;
-          text-align: center;
-          top: calc(50vh - 101.8px/2);
           width: 1250px;
       }
       
-      main h1 {
-          margin-top: 0;
+      /* Header styles */
+      header {
+          background: url("./res/assets/img/banners/TPDC_No_text.png") center / cover no-repeat;
+          height: 100vh;
+      }
+      
+      header::before {
+          background-color: #141414;
+          content: "";
+          display: block;
+          height: 100%;
+          opacity: 0.75;
+          width: 100%;
+      }
+      
+      header h1 {
+          margin: 0;
+      }
+      
+      header div.container {
+          position: relative;
+          top: calc(-50vh - 101.8px/2);
+          left: 0;
+      }
+      
+      /* Footer styles */
+      footer {
+          padding: 10px;
+      }
+      
+      footer iframe {
+          width: 90%;
       }
       
       /* Responsive styles */
       @media only screen and (max-width: 1250px) {
-          main {
+          .container {
               width: 95%;
-              top: calc(50vh - 126.8px/2);
           }
       }
       
-      @media only screen and (max-width: 656px) {
-          main {
-              top: calc(50vh - 151.8px/2);
+      @media only screen and (max-width: 673px) {
+          header div.container {
+              top: calc(-50vh - 151.8px/2);
           }
       }
       
-      @media only screen and (max-width: 428px) {
-          html {
+      @media only screen and (max-width: 445px) {
+          header div.container {
               font-size: 15px;
               line-height: 1.333333333;
           }
           
-          main {
-              top: calc(50vh - 116.09px/2);
+          header div.container {
+              top: calc(-50vh - 111px/2);
           }
       }
       
-      @media only screen and (max-width: 321px) {
-          main {
-              top: calc(50vh - 135.09px/2);
+      @media only screen and (max-width: 338px) {
+          header div.container {
+              top: calc(-50vh - 135.09px/2);
           }
       }
     </style>
   </head>
   <body>
-    <!-- Main content structure -->
-    <main>
-      <h1>Coming soon!</h1>
-      <p>We're working hard on bringing you a new design that shows the best of what we have to offer. Please bear with us! :D</p>
-    </main>
+    <!-- Header structure -->
+    <header>
+      <div class="container">
+        <h1>Coming soon!</h1>
+        <p>We're working hard on bringing you a new design that shows the best of what we have to offer. Please bear with us! :D</p>
+      </div>
+    </header>
+    
+    <!-- Footer structure -->
+    <footer>
+      <div class="container">
+        <h2>Join us on Discord!</h2>
+        <iframe src="https://discordapp.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      </div>
+    </footer>
   </body>
 </html>
