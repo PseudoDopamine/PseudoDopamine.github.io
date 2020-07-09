@@ -2,31 +2,130 @@
 <html lang="en-GB">
   <head>
     <!-- Site metadata -->
+    <meta charset="UTF-8" />
     <meta http-equiv="author" content="Ary Yakos (n3zz), Ramone Graham" />
     <meta name="description" content="A Discord community of programmers, content creators, and above all, gamers. This is the official site of The Pseudo Dopamine Centre." />
     <meta name="keywords" content="The Pseudo Dopamine Centre" />
     <meta name="google-site-verification" content="ICj5ycluk6Rs9EMo73U_zf15iZ3PWb6BfEUnxJzA1hw" />
     
     <!-- Page title -->
-    <title>The Pseudo Dopamine Centre | Official site</title>
+    <title>The Pseudo Dopamine Centre | Coming soon!</title>
     
     <!-- Resource links -->
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="./res/css/main.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body id="landing">
-    <!-- Navbar structure -->
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="join.html">Join us!</a></li>
-      </ul>
-    </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" type="text/css" rel="stylesheet" />
     
-    <!-- Will be using this in a later commit -->
-    <!--<div class="wrapper"><h1 class="glitch">TPDC</h1></div>-->
+    <!-- Page-specific styling -->
+    <style>
+      /* Global styles */
+      * {
+          box-sizing: border-box;
+      }
+      
+      html {
+          color: #F8F8F8;
+          font-family: Comfortaa, cursive;
+          font-size: 20px;
+          line-height: 1.25;
+          text-align: center;
+      }
+      
+      body {
+          background-color: #141414;
+          margin: 0;
+          padding: 0;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+          font-family: Bungee, cursive;
+      }
+      
+      .container {
+          margin: 0 auto;
+          width: 1250px;
+      }
+      
+      /* Header styles */
+      header {
+          background: url("./res/assets/img/banners/TPDC_No_text.png") center / cover no-repeat;
+          height: 100vh;
+      }
+      
+      header::before {
+          background-color: #141414;
+          content: "";
+          display: block;
+          height: 100%;
+          opacity: 0.75;
+          width: 100%;
+      }
+      
+      header h1 {
+          margin: 0;
+      }
+      
+      header div.container {
+          position: relative;
+          top: calc(-50vh - 101.8px/2);
+          left: 0;
+      }
+      
+      /* Footer styles */
+      footer {
+          padding: 10px;
+      }
+      
+      footer iframe {
+          width: 90%;
+      }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 1250px) {
+          .container {
+              width: 95%;
+          }
+      }
+      
+      @media only screen and (max-width: 673px) {
+          header div.container {
+              top: calc(-50vh - 151.8px/2);
+          }
+      }
+      
+      @media only screen and (max-width: 445px) {
+          header div.container {
+              font-size: 15px;
+              line-height: 1.333333333;
+          }
+          
+          header div.container {
+              top: calc(-50vh - 111px/2);
+          }
+      }
+      
+      @media only screen and (max-width: 338px) {
+          header div.container {
+              top: calc(-50vh - 135.09px/2);
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header structure -->
+    <header>
+      <div class="container">
+        <h1>Coming soon!</h1>
+        <p>We're working hard on bringing you a new design that shows the best of what we have to offer. Please bear with us! :D</p>
+      </div>
+    </header>
+    
+    <!-- Footer structure -->
+    <footer>
+      <div class="container">
+        <h2>Join us on Discord!</h2>
+        <iframe src="https://discordapp.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      </div>
+    </footer>
   </body>
 </html>
