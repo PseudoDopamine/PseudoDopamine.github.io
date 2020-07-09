@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
 body{
     background-color: #141414;
+    text-decoration:none;
 }
 
 h1{
+    font-family:'Roboto Mono', cursive;
     color:#f8f8f8;
 }
 
@@ -13,5 +17,10 @@ h1{
 }
 
 p{
+    font-family:'Roboto Mono', cursive;
     color:#f8f8f8;
+}
+
+header{
+    background-color:#DD561C;
 }
