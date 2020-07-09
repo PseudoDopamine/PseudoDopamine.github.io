@@ -1,0 +1,56 @@
+/* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@400;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: #F8F8F8;
+    font-family: Comfortaa, cursive;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+body {
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bungee, cursive;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1250px;
+}
+
+/* Header styles */
+header {
+    height: 100vh;
+}
+
+/* Footer styles */
+footer {
+    padding: 10px;
+}
+
+footer iframe {
+    width: 90%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1250px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
