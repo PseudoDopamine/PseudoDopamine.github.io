@@ -5,11 +5,16 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: #07A6EA;
+}
+
 html {
     color: #F8F8F8;
     font-family: Comfortaa, cursive;
     font-size: 20px;
     line-height: 1.25;
+    scroll-behavior: smooth;
     text-align: center;
 }
 
@@ -23,14 +28,53 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Bungee, cursive;
 }
 
+a {
+    color: #F8F8F8;
+    text-decoration: none;
+    transition: all 250ms ease;
+}
+
 .container {
     margin: 0 auto;
     width: 1250px;
 }
 
+/* Navigation bar styles */
+nav {
+    background-color: #1B1B1B;
+    height: fit-content;
+    position: fixed;
+    width: 100%;
+}
+
+ul.navbar-menu {
+    align-items: center;
+    display: flex;
+    height: 75px;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar-menu a {
+    border: 3px solid #141414;
+    border-radius: 7.5px;
+    padding: 7.5px 15px;
+}
+
+.navbar-menu a:hover {
+    border-color: #F8F8F8;
+}
+
 /* Header styles */
 header {
+    align-items: center;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
     height: 100vh;
+    padding: 10px;
 }
 
 /* Footer styles */
