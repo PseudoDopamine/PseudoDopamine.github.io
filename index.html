@@ -14,42 +14,13 @@
     <!-- Resource links -->
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa&display=swap" type="text/css" rel="stylesheet" />
+    <link href="./res/css/main.css" type="text/css" rel="stylesheet" />
     
     <!-- Page-specific styling -->
     <style>
-      /* Global styles */
-      * {
-          box-sizing: border-box;
-      }
-      
-      html {
-          color: #F8F8F8;
-          font-family: Comfortaa, cursive;
-          font-size: 20px;
-          line-height: 1.25;
-          text-align: center;
-      }
-      
-      body {
-          background-color: #141414;
-          margin: 0;
-          padding: 0;
-      }
-      
-      h1, h2, h3, h4, h5, h6 {
-          font-family: Bungee, cursive;
-      }
-      
-      .container {
-          margin: 0 auto;
-          width: 1250px;
-      }
-      
       /* Header styles */
       header {
           background: url("./res/assets/img/banners/TPDC_No_text.png") center / cover no-repeat;
-          height: 100vh;
       }
       
       header::before {
@@ -71,22 +42,7 @@
           left: 0;
       }
       
-      /* Footer styles */
-      footer {
-          padding: 10px;
-      }
-      
-      footer iframe {
-          width: 90%;
-      }
-      
       /* Responsive styles */
-      @media only screen and (max-width: 1250px) {
-          .container {
-              width: 95%;
-          }
-      }
-      
       @media only screen and (max-width: 673px) {
           header div.container {
               top: calc(-50vh - 151.8px/2);
@@ -94,11 +50,6 @@
       }
       
       @media only screen and (max-width: 445px) {
-          header div.container {
-              font-size: 15px;
-              line-height: 1.333333333;
-          }
-          
           header div.container {
               top: calc(-50vh - 111px/2);
           }
