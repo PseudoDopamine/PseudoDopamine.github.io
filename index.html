@@ -231,6 +231,11 @@
     <footer></footer>
     
     <!-- Scripts -->
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      // Access DOM Elements
+      var navBar = document.querySelector("nav.nav-bar");
+      
+      window.addEventListener("scroll", () => navBar.classList.toggle("scrolled", window.scrollY > 0));
+    </script>
   </body>
 </html>
