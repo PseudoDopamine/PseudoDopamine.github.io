@@ -24,7 +24,7 @@
     
     <!-- Page-specific styling -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300&family=Roboto+Mono:ital@0;1&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital@0;1&display=swap");
       
       /* Global styles */
       * {
@@ -101,8 +101,79 @@
           font-family: "Roboto Mono", monospace;
       }
       
+      nav ul {
+          list-style: none;
+      }
+      
+      .flex {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+      }
+      
       /* Navigation bar styles */
-      nav.nav-bar {}
+      nav.nav-bar {
+          color: var(--white);
+          height: 75px;
+          justify-content: space-around;
+          position: fixed;
+          transition-property: all;
+          width: 100%;
+      }
+      
+      nav.nav-bar.scrolled {
+          background-color: var(--white);
+          box-shadow: 0 5px 5px var(--dark-matte-black);
+          color: var(--blue-accent-1);
+      }
+      
+      .nav-bar a {
+          color: currentColor;
+      }
+      
+      .nav-bar.scrolled .menu {
+          font-weight: normal;
+      }
+      
+      .nav-bar .logo {
+          text-decoration-line: none;
+      }
+      
+      .nav-bar .logo h1 {
+          font-size: 35px;
+      }
+      
+      .nav-bar .menu-toggle {
+          background-color: transparent;
+          border: 2.5px solid currentColor;
+          border-radius: 5px;
+          color: currentColor;
+          display: none;
+          height: 35px;
+          transition-property: all;
+          width: 35px;
+      }
+      
+      .nav-bar .menu-toggle:focus {
+          outline: none;
+      }
+      
+      .nav-bar .menu-toggle:hover {
+          border-radius: 10px;
+      }
+      
+      .nav-bar .menu li {
+          display: inline-block;
+          margin: 0 12.5px;
+      }
+      
+      .nav-bar .menu li:first-of-type {
+          margin-left: 0;
+      }
+      
+      .nav-bar .menu li:last-of-type {
+          margin-right: 0;
+      }
       
       /* Header styles */
       header {}
