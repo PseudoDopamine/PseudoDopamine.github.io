@@ -105,10 +105,32 @@
           list-style: none;
       }
       
+      a.button {
+          background-color: var(--blue-accent-1);
+          border-radius: 10px;
+          color: var(--white);
+          display: inline-block;
+          margin: 10px;
+          padding: 10px 15px;
+          transition-property: all;
+      }
+      
+      a.button:hover {
+          background-color: var(--blue-accent-2);
+          border-radius: 15px;
+          text-decoration-line: none;
+      }
+      
       .flex {
           align-items: center;
           display: flex;
           justify-content: space-between;
+      }
+      
+      .container {
+          margin: 0 auto;
+          padding: 25px;
+          width: 1250px;
       }
       
       /* Navigation bar styles */
@@ -146,12 +168,13 @@
       .nav-bar .menu-toggle {
           background-color: transparent;
           border: 2.5px solid currentColor;
-          border-radius: 5px;
+          border-radius: 10px;
           color: currentColor;
           display: none;
-          height: 35px;
+          font-size: 15px;
+          height: 45px;
           transition-property: all;
-          width: 35px;
+          width: 45px;
       }
       
       .nav-bar .menu-toggle:focus {
@@ -159,7 +182,7 @@
       }
       
       .nav-bar .menu-toggle:hover {
-          border-radius: 10px;
+          border-radius: 15px;
       }
       
       .nav-bar .menu li {
@@ -176,7 +199,16 @@
       }
       
       /* Header styles */
-      header {}
+      header {
+          background: center / cover no-repeat url("./res/assets/img/banners/TPDC_Banner.png");
+          height: 100vh;
+          width: 100%;
+      }
+      
+      header .buttons {
+          margin: 5px 0 0 15px;
+          position: absolute;
+      }
       
       /* Main content styles */
       main {}
