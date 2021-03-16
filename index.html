@@ -121,6 +121,10 @@
           text-decoration-line: none;
       }
       
+      a.discord {
+          color: #7289DA;
+      }
+      
       .flex {
           align-items: center;
           display: flex;
@@ -214,6 +218,42 @@
       /* Main content styles */
       main {}
       
+      #about .info {
+          margin: 10px 0;
+      }
+      
+      #about .staff {
+          background-color: var(--light-matte-black);
+          border-radius: 15px;
+          box-shadow: 7.5px 7.5px 5px var(--dark-matte-black);
+          padding: 25px;
+      }
+      
+      #about .staff h3 {
+          margin-bottom: 10px;
+      }
+      
+      #about .staff .flex {
+          align-items: baseline;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      
+      #about .staff .member {
+          background-color: var(--dark-matte-black);
+          border-radius: 10px;
+          padding: 15px;
+          width: 30%;
+      }
+      
+      #about .staff .member .role {
+          color: #7E878B;
+      }
+      
+      #about .staff .member .contact li {
+          display: inline-block;
+      }
+      
       /* Footer styles */
       footer {}
       
@@ -270,7 +310,7 @@
       <section id="about" class="container">
         <h2>Who are we?</h2>
         <p class="info">
-          We are "The Pseudo Dopamine Centre" (Or TPDC for short) - A <a class="discord-link" href="https://discord.com/">Discord</a> server made for like-minded people to hang out and enjoy some chill vibes with each other.
+          We are "The Pseudo Dopamine Centre" (Or TPDC for short) - A <a class="discord" href="https://discord.com/">Discord</a> server made for like-minded people to hang out and enjoy some chill vibes with each other.
           <br /><br />
           At TPDC, we're always looking for opportunities that allow us, as a community, to come together and create something amazing for everyone to share, in addition to benefitting the wider world around us. Since the server's creation in 2019, the server has grown past 100 memebers and has raised £170 for <a href="https://tiltify.com/+the-psuedo-dopamine-centre/chill19">COVID-19 relief</a>.
           <br /><br />
@@ -282,8 +322,8 @@
             <article class="member">
               <h4 class="name">Amritesh "n3zz/Ary Yakos" Panda</h4>
               <span class="role">Founder, CEO & Dopamine Dealer</span>
+              <hr />
               <ul class="contact">
-                <li>Discord: n3zz#9555</li>
                 <li>
                   <a href="https://n3zz.github.io">Website</a>
                 </li>
@@ -295,8 +335,8 @@
             <article class="member">
               <h4 class="name">Ramone "Sweetboy13735" Graham</h4>
               <span class="role">Deputy CEO & Head Administrator</span>
+              <hr />
               <ul class="contact">
-                <li>Discord: Sweetboy13735#2026</li>
                 <li>
                   <a href="https://Sweetboy13735.github.io">Website</a>
                 </li>
@@ -308,8 +348,8 @@
             <article class="member">
               <h4 class="name">Aurora "AurorasChaos" Nicolas</h4>
               <span class="role">Technical Director & Head of Community Projects</span>
+              <hr />
               <ul class="contact">
-                <li>Discord: Aurora#8008</li>
                 <li>
                   <a href="https://AurorasChaos.github.io">Website</a>
                 </li>
@@ -321,8 +361,8 @@
             <article class="member">
               <h4 class="name">Ria "Maharui" Götze</h4>
               <span class="role">Head of Brand Design & Social Engagement</span>
+              <hr />
               <ul class="contact">
-                <li>Discord: Maharui#8449</li>
                 <li>
                   <a href="mailto:ria.goetze@gmail.com">E-mail</a>
                 </li>
