@@ -22,7 +22,7 @@
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     
-    <!-- Font Awesome Script-->
+    <!-- Font Awesome script-->
     <script src="https://kit.fontawesome.com/15490c1074.js" crossorigin="anonymous"></script>
     
     <!-- Page-specific styling -->
@@ -140,6 +140,19 @@
           width: 1250px;
       }
       
+      .menu li {
+          display: inline-block;
+          margin: 0 12.5px;
+      }
+      
+      .menu li:first-of-type {
+          margin-left: 0;
+      }
+      
+      .menu li:last-of-type {
+          margin-right: 0;
+      }
+      
       /* Navigation bar styles */
       nav.nav-bar {
           color: var(--white);
@@ -193,19 +206,6 @@
           border-radius: 15px;
       }
       
-      .nav-bar .menu li {
-          display: inline-block;
-          margin: 0 12.5px;
-      }
-      
-      .nav-bar .menu li:first-of-type {
-          margin-left: 0;
-      }
-      
-      .nav-bar .menu li:last-of-type {
-          margin-right: 0;
-      }
-      
       /* Header styles */
       header {
           background: center / cover no-repeat url("./res/assets/img/banners/TPDC_Banner.png");
@@ -254,7 +254,24 @@
       }
       
       #about .staff .member .contact li {
-          display: inline-block;
+          font-size: 1.25rem;
+          margin: 0 10px;
+      }
+      
+      #about .staff .member .contact li:first-of-type {
+          margin-left: 0;
+      }
+      
+      #about .staff .member .contact li:last-of-type {
+          margin-right: 0;
+      }
+      
+      #about .staff .member .contact a {
+          color: var(--white);
+      }
+      
+      #about .staff .member .contact a:hover {
+          color: var(--blue-accent-2);
       }
       
       /* Footer styles */
@@ -325,49 +342,59 @@
             <article class="member">
               <h4 class="name">Amritesh "n3zz/Ary Yakos" Panda</h4>
               <span class="role">Founder, CEO & Dopamine Dealer</span>
-              <hr />
-              <ul class="contact">
+              <ul class="contact menu">
                 <li>
-                  <a href="https://n3zz.github.io">Website</a>
+                  <a href="https://n3zz.github.io">
+                    <i class="fas fa-globe"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="mailto:n3xi@protonmail.com">E-mail</a>
+                  <a href="mailto:n3xi@protonmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
                 </li>
               </ul>
             </article>
             <article class="member">
               <h4 class="name">Ramone "Sweetboy13735" Graham</h4>
               <span class="role">Deputy CEO & Head Administrator</span>
-              <hr />
-              <ul class="contact">
+              <ul class="contact menu">
                 <li>
-                  <a href="https://Sweetboy13735.github.io">Website</a>
+                  <a href="https://Sweetboy13735.github.io">
+                    <i class="fas fa-globe"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="mailto:ramonegraham@gmail.com">E-mail</a>
+                  <a href="mailto:ramonegraham@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
                 </li>
               </ul>
             </article>
             <article class="member">
               <h4 class="name">Aurora "AurorasChaos" Nicolas</h4>
               <span class="role">Technical Director & Head of Community Projects</span>
-              <hr />
-              <ul class="contact">
+              <ul class="contact menu">
                 <li>
-                  <a href="https://AurorasChaos.github.io">Website</a>
+                  <a href="https://AurorasChaos.github.io">
+                    <i class="fas fa-globe"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="mailto:awesumeminecrafter@gmail.com">E-mail</a>
+                  <a href="mailto:awesumeminecrafter@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
                 </li>
               </ul>
             </article>
             <article class="member">
               <h4 class="name">Ria "Maharui" Götze</h4>
               <span class="role">Head of Brand Design & Social Engagement</span>
-              <hr />
-              <ul class="contact">
+              <ul class="contact menu">
                 <li>
-                  <a href="mailto:ria.goetze@gmail.com">E-mail</a>
+                  <a href="mailto:ria.goetze@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
                 </li>
               </ul>
             </article>
