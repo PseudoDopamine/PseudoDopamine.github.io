@@ -1,5 +1,5 @@
 # The Pseudo Dopamine Centre's Website
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/ThePseudoDopamineCentre/ThePseudoDopamineCentre.github.io/blob/master/CODE_OF_CONDUCT.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/ThePseudoDopamineCentre/ThePseudoDopamineCentre.github.io/blob/master/CODE_OF_CONDUCT.md) ![Discord](https://img.shields.io/discord/556908017594138646?color=%234E5D94%20&label=TPDC&logo=Discord)
 
 As it says on the tin, this project is holding all of the source code for our website, which can be viewed [here](https://ThePseudoDopamineCentre.github.io).
 
