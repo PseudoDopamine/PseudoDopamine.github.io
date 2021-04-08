@@ -1,59 +1,481 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <!-- Site metadata -->
     <meta charset="UTF-8" />
-    <meta http-equiv="author" content="Ary Yakos (n3zz), Ramone Graham" />
-    <meta name="description" content="A Discord community of programmers, content creators, and above all, gamers. This is the official site of The Pseudo Dopamine Centre." />
+    
+    <!-- Site metadata -->
+    <meta name="author" content="The Pseudo Dopamine Centre" />
+    <meta name="description" content="A community of programmers, content creators, and above all, gamers. This is the official site of The Pseudo Dopamine Centre!" />
     <meta name="google-site-verification" content="UlnU9O04xb2j6KgYBlJ27jklba3LG59EBht39ELVHww" />
-    <meta name="keywords" content="The Pseudo Dopamine Centre" />
+    <meta name="keywords" content="The Pseudo Dopamine Centre TPDC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:description" content="A community of programmers, content creators, and above all, gamers." />
+    <meta property="og:image" content="https://ThePseudoDopamineCentre.github.io/res/assets/img/logos/TPDC_Avatar.png" />
+    <meta property="og:title" content="The Pseudo Dopamine Centre" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ThePseudoDopamineCentre.github.io" />
     
     <!-- Page title -->
     <title>The Pseudo Dopamine Centre | Official site</title>
     
     <!-- Resource links -->
-    <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="./favicon.ico" type="image/x-icon" rel="icon" />
-    <link href="./res/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="./favicon.ico" type="image/x-icon" rel="shortcut icon" />
     
-    <!-- Page specific styling -->
+    <!-- Font Awesome script-->
+    <script src="https://kit.fontawesome.com/15490c1074.js" crossorigin="anonymous"></script>
+    
+    <!-- Page-specific styling -->
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital@0;1&display=swap");
+      
+      /* Global styles */
+      * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          transition: none 250ms ease;
+      }
+      
+      *::selection {
+          background-color: var(--blue-accent-3);
+          color: var(--white);
+      }
+      
+      :root {
+          /* Colour palettes */
+          /* Core */
+          --dark-blue: #1A1B29;
+          --dark-matte-black: #141414;
+          --light-matte-black: #1B1B1B;
+          --white: #F8F8F8;
+          --blue-accent-1: #216298;
+          --blue-accent-2: #07A6EA;
+          --blue-accent-3: #3573BD;
+          
+          /* Auxiliary */
+          --orange: #F2A043;
+          --yellow: #FAD766;
+          --purple: #8B63BE;
+      }
+      
+      html {
+          background-color: var(--dark-blue);
+          color: var(--white);
+          font: 300 20px / 1.25 Comfortaa, cursive;
+      }
+      
+      a {
+          color: var(--blue-accent-1);
+          text-decoration-line: none;
+          transition-property: all;
+      }
+      
+      a:hover {
+          color: var(--blue-accent-2);
+          text-decoration-line: underline;
+      }
+      
+      h1 {
+          font: 2.5rem / 1.25 Bungee, cursive;
+      }
+      
+      h2 {
+          font-size: 1.75rem;
+      }
+      
+      h3 {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+      }
+      
+      h4 {
+          font-size: 1.25rem;
+      }
+      
+      h5 {
+          font-size: 1rem;
+      }
+      
+      h6 {
+          font-size: 0.875rem;
+      }
+      
+      p {
+          margin: 10px 0;
+      }
+      
+      h2, h3, h4, h5, h6 {
+          font-family: "Roboto Mono", monospace;
+      }
+      
+      nav ul {
+          list-style: none;
+      }
+      
+      a.button {
+          background-color: var(--blue-accent-1);
+          border-radius: 10px;
+          color: var(--white);
+          display: inline-block;
+          margin: 10px;
+          padding: 10px 15px;
+          transition-property: all;
+      }
+      
+      a.button:hover {
+          background-color: var(--blue-accent-2);
+          border-radius: 15px;
+          text-decoration-line: none;
+      }
+      
+      a.discord {
+          color: #7289DA;
+      }
+      
+      a.icon {
+          color: var(--white);
+      }
+      
+      a.icon:hover {
+          color: var(--blue-accent-2);
+      }
+      
+      .flex {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+      }
+      
+      .container {
+          margin: 0 auto;
+          padding: 25px;
+          width: 1250px;
+      }
+      
+      .menu li {
+          display: inline-block;
+          margin: 0 12.5px;
+      }
+      
+      .menu li:first-of-type {
+          margin-left: 0;
+      }
+      
+      .menu li:last-of-type {
+          margin-right: 0;
+      }
+      
+      /* Navigation bar styles */
+      nav.nav-bar {
+          color: var(--white);
+          height: 75px;
+          justify-content: space-around;
+          position: fixed;
+          transition-property: all;
+          width: 100%;
+          z-index: 1;
+      }
+      
+      nav.nav-bar.scrolled {
+          background-color: var(--white);
+          box-shadow: 0 5px 5px var(--dark-matte-black);
+          color: var(--blue-accent-1);
+      }
+      
+      .nav-bar a {
+          color: currentColor;
+      }
+      
+      .nav-bar.scrolled .menu {
+          font-weight: normal;
+      }
+      
+      .nav-bar .logo {
+          text-decoration-line: none;
+      }
+      
+      .nav-bar .logo h1 {
+          font-size: 35px;
+      }
+      
+      .nav-bar .menu-toggle {
+          background-color: transparent;
+          border: 2.5px solid currentColor;
+          border-radius: 10px;
+          color: currentColor;
+          display: none;
+          font-size: 15px;
+          height: 45px;
+          transition-property: all;
+          width: 45px;
+      }
+      
+      .nav-bar .menu-toggle:focus {
+          outline: none;
+      }
+      
+      .nav-bar .menu-toggle:hover {
+          border-radius: 15px;
+      }
+      
       /* Header styles */
       header {
-          background: url("./res/assets/img/banners/Home.gif") center / cover no-repeat;
+          background: center / cover no-repeat url("./res/assets/img/banners/TPDC_Banner.png");
+          height: 100vh;
+          width: 100%;
+      }
+      
+      header .buttons {
+          margin: 5px 0 0 15px;
+          position: absolute;
+      }
+      
+      /* Main content styles */
+      section:nth-of-type(even) {
+          background-color: var(--white);
+          color: var(--light-matte-black);
+      }
+      
+      main .container {
+          padding: 75px 0 50px 0;
+      }
+      
+      main h2 {
+          border-bottom: 1px solid;
+          margin-bottom: 25px;
+      }
+      
+      section#join {
+          background: fixed center / cover no-repeat url("./res/assets/img/banners/TPDC_Channel_art.png");
+      }
+      
+      #about .staff {
+          background-color: var(--light-matte-black);
+          border-radius: 15px;
+          box-shadow: 7.5px 7.5px 5px var(--dark-matte-black);
+          padding: 25px;
+      }
+      
+      #about .staff .flex {
+          align-items: baseline;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+      
+      #about .staff .member {
+          background-color: var(--dark-matte-black);
+          border-radius: 10px;
+          padding: 15px;
+          width: 30%;
+      }
+      
+      #about .staff .member .role {
+          color: #7E878B;
+      }
+      
+      #join .discord {
+          display: block;
+          margin: 15px auto 0 auto;
+          width: 95%;
+      }
+      
+      /* Footer styles */
+      footer {
+          background-color: var(--dark-matte-black);
+      }
+      
+      /* Responsive styling */
+      @supports (scroll-behavior: smooth) {
+          html {
+              scroll-behavior: smooth;
+          }
       }
     </style>
   </head>
   <body>
     <!-- Navigation bar structure -->
-    <nav>
-      <ul class="navbar-menu">
+    <nav class="flex nav-bar">
+      <a class="logo" href="#" title="Scroll to top">
+        <h1>The Pseudo Dopamine Centre</h1>
+      </a>
+      <button class="menu-toggle" onclick="toggleNavMenu()">☰</button>
+      <ul class="menu">
         <li>
           <a href="#">Home</a>
         </li>
         <li>
-          <a href="./about.html">About us</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="./projects.html">Our projects</a>
+          <a href="#news">News</a>
         </li>
         <li>
-          <a href="./join.html">Join us!</a>
+          <a href="#events">Events</a>
+        </li>
+        <li>
+          <a href="#rules">Rules</a>
+        </li>
+        <li>
+          <a href="#join">Join us</a>
         </li>
       </ul>
     </nav>
-      
+    
     <!-- Header structure -->
-    <header>
-      <h1>TPDC</h1>
+    <header class="flex">
+      <div class="container">
+        <h2>A community of programmers, content creators, and above all, gamers.</h2>
+        <div class="buttons">
+          <a class="button" href="#about">Learn more...</a>
+          <a class="button" href="#join">Join us!</a>
+        </div>
+      </div>
     </header>
+    
+    <!-- Main content structure -->
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2>About us</h2>
+          <p>
+            We are "The Pseudo Dopamine Centre" (Or TPDC for short) - A <a class="discord" href="https://discord.com/" target="_blank">Discord</a> server made for like-minded people to hang out and enjoy some chill vibes with each other.
+            <br /><br />
+            At TPDC, we're always looking for opportunities that allow us, as a community, to come together and create something amazing for everyone to share, in addition to benefitting the wider world around us. Since the server's creation in 2019, the server has grown past 100 memebers and has raised £170 for <a href="https://tiltify.com/+the-psuedo-dopamine-centre/chill19" target="blank">COVID-19 relief</a>.
+            <br /><br />
+            Whether you're looking to join us in our cause, or you're just looking for a new place to unwind, please feel free to <a href="#join">join us</a>! :D
+          </p>
+          <div class="staff">
+            <h3>Meet the team</h3>
+            <div class="flex">
+              <article class="member">
+                <h4 class="name">Amritesh "n3zz/Ary Yakos" Panda</h4>
+                <p class="role">Founder, CEO & Dopamine Dealer</p>
+                <ul class="contact menu">
+                  <li>
+                    <a class="icon" href="https://n3zz.github.io" target="_blank">
+                      <i class="fas fa-globe fa-lg"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon" href="mailto:n3xi@protonmail.com">
+                      <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+              <article class="member">
+                <h4 class="name">Ramone "Sweetboy13735" Graham</h4>
+                <p class="role">Deputy CEO & Head Administrator</p>
+                <ul class="contact menu">
+                  <li>
+                    <a class="icon" href="https://Sweetboy13735.github.io" target="_blank">
+                      <i class="fas fa-globe fa-lg"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon" href="mailto:ramonegraham@gmail.com">
+                      <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+              <article class="member">
+                <h4 class="name">Aurora "AurorasChaos" Nicolas</h4>
+                <p class="role">Technical Director & Head of Community Projects</p>
+                <ul class="contact menu">
+                  <li>
+                    <a class="icon" href="https://AurorasChaos.github.io" target="_blank">
+                      <i class="fas fa-globe fa-lg"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="icon" href="mailto:awesumeminecrafter@gmail.com">
+                      <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+              <article class="member">
+                <h4 class="name">Ria "Maharui" Götze</h4>
+                <p class="role">Head of Brand Design & Social Engagement</p>
+                <ul class="contact menu">
+                  <li>
+                    <a class="icon" href="mailto:ria.goetze@gmail.com">
+                      <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="container">
+          <h2>Featured news</h2>
+          <p>
+            <em>No news as yet...</em>
+          </p>
+        </div>
+      </section>
+      <section id="events">
+        <div class="container">
+          <h2>Latest events</h2>
+          <p>
+            <em>No events as yet...</em>
+          </p>
+        </div>
+      </section>
+      <section id="rules">
+        <div class="container">
+          <h2>Our rules</h2>
+        </div>
+      </section>
+      <section id="join">
+        <div class="container">
+          <h2>Join us on Discord!</h2>
+          <p>Just a sec! Before becoming a memeber of TPDC, please be sure to read through our rules <a href="#rules">here</a>.</p>
+          <iframe class="discord" src="https://discord.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </section>
+    </main>
     
     <!-- Footer structure -->
     <footer>
-      <div class="container">
-        <h2>Join us on Discord!</h2>
-        <iframe src="https://discordapp.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      <div class="flex container">
+        <p class="copyright">&copy;2021 The Psuedo Dopamine Centre. All Rights Reserved.</p>
+        <ul class="social menu">
+          <li>
+            <a class="icon" href="https://discord.gg/PXhhQSw" target="_blank">
+              <i class="fab fa-discord fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="icon" href="https://www.twitch.tv/ThePseudoDopamineCentre" target="_blank">
+              <i class="fab fa-twitch fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="icon" href="https://www.youtube.com/channel/UCt1kiPMhAKpcahrK8TcuLfA" target="_blank">
+              <i class="fab fa-youtube fa-lg"></i>
+            </a>
+          </li>
+          <li>
+            <a class="icon" href="https://twitter.com/ThePseudoCentre" target="_blank">
+              <i class="fab fa-twitter fa-lg"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
+    
+    <!-- Scripts -->
+    <script type="text/javascript">
+      // Access DOM Elements
+      var navBar = document.querySelector("nav.nav-bar");
+      
+      window.addEventListener("scroll", () => navBar.classList.toggle("scrolled", window.scrollY > 0));
+    </script>
   </body>
 </html>
