@@ -274,6 +274,33 @@
           color: #7E878B;
       }
       
+      #rules ol {
+          counter-reset: li;
+          list-style: none;
+          margin: 0 auto;
+          width: 95%;
+      }
+      
+      #rules ol li {
+          counter-increment: li;
+          margin-top: 25px;
+          text-align: justify;
+          text-justify: auto;
+      }
+      
+      #rules ol li::before {
+          background-color: var(--blue-accent-3);
+          border-radius: 2.5px;
+          color: var(--white);
+          content: counter(li);
+          display: inline-block;
+          font-weight: bold;
+          height: 22.5px;
+          margin-right: 5px;
+          text-align: center;
+          width: 22.5px;
+      }
+      
       #join .discord {
           display: block;
           margin: 15px auto 0 auto;
