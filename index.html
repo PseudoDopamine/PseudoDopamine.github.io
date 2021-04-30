@@ -7,7 +7,7 @@
     <meta name="author" content="The Pseudo Dopamine Centre" />
     <meta name="description" content="A community of programmers, content creators, and above all, gamers. This is the official site of The Pseudo Dopamine Centre!" />
     <meta name="google-site-verification" content="UlnU9O04xb2j6KgYBlJ27jklba3LG59EBht39ELVHww" />
-    <meta name="keywords" content="The Pseudo Dopamine Centre TPDC" />
+    <meta name="keywords" content="The Pseudo Dopamine Centre, TPDC" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:description" content="A community of programmers, content creators, and above all, gamers." />
     <meta property="og:image" content="https://ThePseudoDopamineCentre.github.io/res/assets/img/logos/TPDC_Avatar.png" />
@@ -148,9 +148,16 @@
       }
       
       .container {
-          margin: 0 auto;
           padding: 25px;
           width: 1250px;
+      }
+      
+      .focus-point {
+          width: 95%;
+      }
+      
+      .container, .focus-point {
+          margin: 0 auto;
       }
       
       .menu li {
@@ -277,8 +284,6 @@
       #rules ol {
           counter-reset: li;
           list-style: none;
-          margin: 0 auto;
-          width: 95%;
       }
       
       #rules ol li {
@@ -303,8 +308,7 @@
       
       #join .discord {
           display: block;
-          margin: 15px auto 0 auto;
-          width: 95%;
+          margin-top: 15px;
       }
       
       /* Footer styles */
@@ -372,7 +376,7 @@
             <br /><br />
             Whether you're looking to join us in our cause, or you're just looking for a new place to unwind, please feel free to <a href="#join">join us</a>! :D
           </p>
-          <div class="staff">
+          <div class="staff focus-point">
             <h3>Meet the team</h3>
             <div class="flex">
               <article class="member">
@@ -458,8 +462,8 @@
         <div class="container">
           <h2>Our rules</h2>
           <p>"So listen, this ain't a 1984 server, but just follow the basic rules and you'll be fine." - Ary, 2K21</p>
-          <ol>
-            <li>Treat everyone with respect. Harassment, bitch or witch hunting, sexism, racism, or hate speech will not be tolerated. Banter between mates is fine, but don't overdo it.</li>
+          <ol class="focus-point">
+            <li>Treat everyone with respect. Harassment, bitch/witch hunting, sexism, racism, or hate speech will not be tolerated. Banter between mates is fine, but don't overdo it.</li>
             <li>Keep any arguments to a minimum. This is a chill place for everyone to hangout and enjoy the vibes. If you have an issue with another member, please contact staff.</li>
             <li>If you see something against the rules or something that makes you feel unsafe, let staff know. We want this server to be a welcome space for all!</li>
             <li>No spam or self-promotion (This includes direct-messaging fellow members) outside of their respective channels and keep convos on topic.</li>
@@ -472,8 +476,8 @@
       <section id="join">
         <div class="container">
           <h2>Join us on Discord!</h2>
-          <p>Just a sec! Before becoming a memeber of TPDC, please be sure to read through our rules <a href="#rules">here</a>.</p>
-          <iframe class="discord" src="https://discord.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <p>Just a sec! Before becoming a member of TPDC, please be sure to read through our rules <a href="#rules">here</a>.</p>
+          <iframe class="discord focus-point" src="https://discord.com/widget?id=556908017594138646&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
       </section>
     </main>
