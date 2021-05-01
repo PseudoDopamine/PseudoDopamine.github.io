@@ -267,14 +267,13 @@
       #about .staff .grid {
           display: grid;
           gap: 1.25rem;
-          grid-template-columns: repeat(auto-fit, minmax(calc((100% - 2.5rem) / 3), 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       }
       
       #about .staff .member {
           background-color: var(--dark-matte-black);
           border-radius: 10px;
           padding: 15px;
-          /*width: 30%;*/
       }
       
       #about .staff .member .role {
@@ -289,8 +288,6 @@
       #rules ol li {
           counter-increment: li;
           margin-top: 25px;
-          text-align: justify;
-          text-justify: auto;
       }
       
       #rules ol li::before {
@@ -320,6 +317,12 @@
       @supports (scroll-behavior: smooth) {
           html {
               scroll-behavior: smooth;
+          }
+      }
+      
+      @media only screen and (max-width: 1316px) {
+          .container {
+              width: 95%;
           }
       }
     </style>
