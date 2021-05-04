@@ -27,7 +27,7 @@
     
     <!-- Page-specific styling -->
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital@0;1&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300&family=Roboto+Mono:ital@0;1&display=swap");
       
       /* Global styles */
       * {
@@ -194,16 +194,19 @@
           color: currentColor;
       }
       
-      .nav-bar.scrolled .menu {
-          font-weight: normal;
-      }
-      
       .nav-bar .logo {
           text-decoration-line: none;
       }
       
       .nav-bar .logo h1 {
           font-size: 35px;
+      }
+      
+      .nav-bar .logo img {
+          border-radius: 10px;
+          display: none;
+          transition-property: background-color;
+          width: 65px;
       }
       
       .nav-bar .menu-toggle {
@@ -324,6 +327,18 @@
           .container {
               width: 95%;
           }
+          
+          .nav-bar .logo h1 {
+              display: none;
+          }
+          
+          .nav-bar .logo img {
+              display: block;
+          }
+          
+          .nav-bar.scrolled .logo img {
+              background-color: var(--dark-blue);
+          }
       }
     </style>
   </head>
@@ -332,6 +347,7 @@
     <nav class="flex nav-bar">
       <a class="logo" href="#" title="Scroll to top">
         <h1>The Pseudo Dopamine Centre</h1>
+        <img src="./res/assets/img/logos/TPDC_Avatar_NoBG.png" />
       </a>
       <button class="menu-toggle" onclick="toggleNavMenu()">☰</button>
       <ul class="menu">
