@@ -340,6 +340,32 @@
               background-color: var(--dark-blue);
           }
       }
+      
+      @media only screen and (max-width: 768px) {
+          .nav-bar .menu-toggle {
+              display: block;
+          }
+          
+          .nav-bar .menu {
+              align-items: center;
+              background-color: rgba(27, 27, 27, 0.75);
+              color: var(--white);
+              display: flex;
+              flex-direction: column;
+              height: 0;
+              justify-content: space-evenly;
+              overflow-y: hidden;
+              position: fixed;
+              top: 75px;
+              transition-property: height;
+              width: 100%;
+              z-index: -1;
+          }
+          
+          .menu li {
+              margin: 0;
+          }
+      }
     </style>
   </head>
   <body>
@@ -538,9 +564,15 @@
     <!-- Scripts -->
     <script type="text/javascript">
       // Access DOM Elements
-      var navBar = document.querySelector("nav.nav-bar");
+      var navBar = document.querySelector("nav.nav-bar"), navMenu = document.querySelector(".nav-bar .menu"), navMenuToggle = document.querySelector(".nav-bar .menu-toggle"), navMenuToggled = false;
       
       window.addEventListener("scroll", () => navBar.classList.toggle("scrolled", window.scrollY > 0));
+      
+      function toggleNavMenu() {
+        navMenuToggled = !navMenuToggled;
+        navMenu.style.height = navMenuToggled ? "calc(100vh - 75px)" : null;
+        navMenuToggle.innerHTML = navMenuToggled ? "×" : "☰";
+      }
     </script>
   </body>
 </html>
