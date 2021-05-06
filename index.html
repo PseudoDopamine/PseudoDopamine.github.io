@@ -86,7 +86,7 @@
       
       h3 {
           font-size: 1.5rem;
-          margin-bottom: 15px;
+          margin-bottom: 0.75rem;
       }
       
       h4 {
@@ -102,7 +102,7 @@
       }
       
       p {
-          margin: 10px 0;
+          margin: 0.5rem 0;
       }
       
       h2, h3, h4, h5, h6 {
@@ -115,17 +115,17 @@
       
       a.button {
           background-color: var(--blue-accent-1);
-          border-radius: 10px;
+          border-radius: 0.5rem;
           color: var(--white);
           display: inline-block;
-          margin: 10px;
-          padding: 10px 15px;
+          margin: 0.5rem;
+          padding: 0.5rem 0.75rem;
           transition-property: all;
       }
       
       a.button:hover {
           background-color: var(--blue-accent-2);
-          border-radius: 15px;
+          border-radius: 0.75rem;
           text-decoration-line: none;
       }
       
@@ -148,7 +148,7 @@
       }
       
       .container {
-          padding: 25px;
+          padding: 1.25rem;
           width: 1250px;
       }
       
@@ -162,7 +162,7 @@
       
       .menu li {
           display: inline-block;
-          margin: 0 12.5px;
+          margin: 0 0.625rem;
       }
       
       .menu li:first-of-type {
@@ -199,11 +199,11 @@
       }
       
       .nav-bar .logo h1 {
-          font-size: 35px;
+          font-size: 1.75rem;
       }
       
       .nav-bar .logo img {
-          border-radius: 10px;
+          border-radius: 0.5rem;
           display: none;
           transition-property: background-color;
           width: 65px;
@@ -212,10 +212,9 @@
       .nav-bar .menu-toggle {
           background-color: transparent;
           border: 2.5px solid currentColor;
-          border-radius: 10px;
+          border-radius: 0.5rem;
           color: currentColor;
           display: none;
-          font-size: 15px;
           height: 45px;
           transition-property: all;
           width: 45px;
@@ -226,7 +225,7 @@
       }
       
       .nav-bar .menu-toggle:hover {
-          border-radius: 15px;
+          border-radius: 0.75rem;
       }
       
       /* Header styles */
@@ -237,7 +236,7 @@
       }
       
       header .buttons {
-          margin: 5px 0 0 15px;
+          margin: 0.25rem 0 0 0.75rem;
           position: absolute;
       }
       
@@ -253,7 +252,7 @@
       
       main h2 {
           border-bottom: 1px solid;
-          margin-bottom: 25px;
+          margin-bottom: 1.25rem;
       }
       
       section#join {
@@ -262,9 +261,9 @@
       
       #about .staff {
           background-color: var(--light-matte-black);
-          border-radius: 15px;
+          border-radius: 0.75rem;
           box-shadow: 7.5px 7.5px 5px var(--dark-matte-black);
-          padding: 25px;
+          padding: 1.25rem;
       }
       
       #about .staff .grid {
@@ -275,8 +274,8 @@
       
       #about .staff .member {
           background-color: var(--dark-matte-black);
-          border-radius: 10px;
-          padding: 15px;
+          border-radius: 0.5rem;
+          padding: 0.75rem;
       }
       
       #about .staff .member .role {
@@ -290,30 +289,35 @@
       
       #rules ol li {
           counter-increment: li;
-          margin-top: 25px;
+          margin-top: 1.25rem;
       }
       
       #rules ol li::before {
           background-color: var(--blue-accent-3);
-          border-radius: 2.5px;
+          border-radius: 0.125rem;
           color: var(--white);
           content: counter(li);
           display: inline-block;
           font-weight: bold;
-          height: 22.5px;
-          margin-right: 5px;
+          height: 1.125rem;
+          margin-right: 0.25rem;
           text-align: center;
-          width: 22.5px;
+          width: 1.125rem;
       }
       
       #join .discord {
           display: block;
-          margin-top: 15px;
+          margin-top: 0.75rem;
       }
       
       /* Footer styles */
       footer {
           background-color: var(--dark-matte-black);
+      }
+      
+      footer .flex.container {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
       }
       
       /* Responsive styling */
@@ -342,6 +346,10 @@
       }
       
       @media only screen and (max-width: 768px) {
+          html {
+              font-size: 15px;
+          }
+          
           .nav-bar .menu-toggle {
               display: block;
           }
