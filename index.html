@@ -86,7 +86,8 @@
       
       h3 {
           font-size: 1.5rem;
-          margin-bottom: 0.75rem;
+          margin-bottom: 1rem;
+          text-align: center;
       }
       
       h4 {
@@ -152,6 +153,12 @@
           width: 1250px;
       }
       
+      .grid {
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+      
       .focus-point {
           width: 95%;
       }
@@ -171,6 +178,12 @@
       
       .menu li:last-of-type {
           margin-right: 0;
+      }
+      
+      .grid .card {
+          background-color: var(--dark-matte-black);
+          border-radius: 0.5rem;
+          padding: 0.75rem;
       }
       
       /* Navigation bar styles */
@@ -259,27 +272,8 @@
           background: fixed center / cover no-repeat url("./res/assets/img/banners/TPDC_Channel_art.png");
       }
       
-      #about .staff {
-          background-color: var(--light-matte-black);
-          border-radius: 0.75rem;
-          box-shadow: 7.5px 7.5px 5px var(--dark-matte-black);
-          padding: 1.25rem;
-      }
-      
-      #about .staff .grid {
-          display: grid;
-          gap: 1.25rem;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      }
-      
-      #about .staff .member {
-          background-color: var(--dark-matte-black);
-          border-radius: 0.5rem;
-          padding: 0.75rem;
-      }
-      
-      #about .staff .member .role {
-          color: #7E878B;
+      #about .staff .role {
+          color: var(--blue-accent-3);
       }
       
       #rules ol {
@@ -429,69 +423,67 @@
             <br /><br />
             Whether you're looking to join us in our cause, or you're just looking for a new place to unwind, please feel free to <a href="#join">join us</a>! :D
           </p>
-          <div class="staff focus-point">
-            <h3>Meet the team</h3>
-            <div class="grid">
-              <article class="member">
-                <h4 class="name">Amritesh "n3zz/Ary Yakos" Panda</h4>
-                <p class="role">Founder, CEO & Dopamine Dealer</p>
-                <ul class="contact menu">
-                  <li>
-                    <a class="icon" href="https://n3zz.github.io" target="_blank">
-                      <i class="fas fa-globe fa-lg"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon" href="mailto:n3xi@protonmail.com">
-                      <i class="fas fa-envelope fa-lg"></i>
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article class="member">
-                <h4 class="name">Ramone "Sweetboy13735" Graham</h4>
-                <p class="role">Deputy CEO & Head Administrator</p>
-                <ul class="contact menu">
-                  <li>
-                    <a class="icon" href="https://Sweetboy13735.github.io" target="_blank">
-                      <i class="fas fa-globe fa-lg"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon" href="mailto:ramonegraham@gmail.com">
-                      <i class="fas fa-envelope fa-lg"></i>
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article class="member">
-                <h4 class="name">Aurora "AurorasChaos" Nicolas</h4>
-                <p class="role">Technical Director & Head of Community Projects</p>
-                <ul class="contact menu">
-                  <li>
-                    <a class="icon" href="https://AurorasChaos.github.io" target="_blank">
-                      <i class="fas fa-globe fa-lg"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="icon" href="mailto:awesumeminecrafter@gmail.com">
-                      <i class="fas fa-envelope fa-lg"></i>
-                    </a>
-                  </li>
-                </ul>
-              </article>
-              <article class="member">
-                <h4 class="name">Ria "Maharui" Götze</h4>
-                <p class="role">Head of Brand Design & Social Engagement</p>
-                <ul class="contact menu">
-                  <li>
-                    <a class="icon" href="mailto:ria.goetze@gmail.com">
-                      <i class="fas fa-envelope fa-lg"></i>
-                    </a>
-                  </li>
-                </ul>
-              </article>
-            </div>
+          <h3>Meet the staff</h3>
+          <div class="staff grid focus-point">
+            <article class="card">
+              <h4 class="name">Amritesh "n3zz/Ary Yakos" Panda</h4>
+              <p class="role">Founder, CEO & Dopamine Dealer</p>
+              <ul class="contact menu">
+                <li>
+                  <a class="icon" href="https://n3zz.github.io" target="_blank">
+                    <i class="fas fa-globe fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="mailto:n3xi@protonmail.com">
+                    <i class="fas fa-envelope fa-lg"></i>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4 class="name">Ramone "Sweetboy13735" Graham</h4>
+              <p class="role">Deputy CEO & Head Administrator</p>
+              <ul class="contact menu">
+                <li>
+                  <a class="icon" href="https://Sweetboy13735.github.io" target="_blank">
+                    <i class="fas fa-globe fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="mailto:ramonegraham@gmail.com">
+                    <i class="fas fa-envelope fa-lg"></i>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4 class="name">Aurora "AurorasChaos" Nicolas</h4>
+              <p class="role">Technical Director & Head of Community Projects</p>
+              <ul class="contact menu">
+                <li>
+                  <a class="icon" href="https://AurorasChaos.github.io" target="_blank">
+                    <i class="fas fa-globe fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="mailto:awesumeminecrafter@gmail.com">
+                    <i class="fas fa-envelope fa-lg"></i>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <article class="card">
+              <h4 class="name">Ria "Maharui" Götze</h4>
+              <p class="role">Head of Brand Design & Social Engagement</p>
+              <ul class="contact menu">
+                <li>
+                  <a class="icon" href="mailto:ria.goetze@gmail.com">
+                    <i class="fas fa-envelope fa-lg"></i>
+                  </a>
+                </li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
