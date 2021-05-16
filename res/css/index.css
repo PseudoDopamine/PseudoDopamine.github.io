@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300&family=Roboto+Mono:ital@0;1&display=swap");
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: none 250ms ease;
+}
+
+*::selection {
+    background-color: var(--bright-navy-blue);
+    color: var(--cultured);
+}
+
+:root {
+    /* Colour palettes */
+    /* Core */
+    --raisin-black: #1A1B29;
+    --eerie-black-1: #141414;
+    --eerie-black-2: #1B1B1B;
+    --cultured: #F8F8F8;
+    --lapis-lazuli: #216298;
+    --carolina-blue: #07A6EA;
+    --bright-navy-blue: #3573BD;
+    
+    /* Auxiliary */
+    --orange: #F2A043;
+    --yellow: #FAD766;
+    --purple: #8B63BE;
+}
+
+html {
+    background-color: var(--raisin-black);
+    color: var(--cultured);
+    font: 300 20px / 1.25 Comfortaa, cursive;
+}
+
+a {
+    color: var(--lapis-lazuli);
+    text-decoration-line: none;
+    transition-property: all;
+}
+
+a:hover {
+    color: var(--carolina-blue);
+    text-decoration-line: underline;
+}
+
+h1 {
+    font: 2.5rem / 1.25 Bungee, cursive;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Roboto Mono", monospace;
+}
+
+nav ul {
+    list-style: none;
+}
+
+a.button {
+    background-color: var(--lapis-lazuli);
+    border-radius: 0.5rem;
+    color: var(--cultured);
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    transition-property: all;
+}
+
+a.button:hover {
+    background-color: var(--carolina-blue);
+    border-radius: 0.75rem;
+    text-decoration-line: none;
+}
+
+a.discord {
+    color: #5865F2;
+}
+
+a.icon {
+    color: var(--cultured);
+}
+
+a.icon:hover {
+    color: var(--carolina-blue);
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 1.25rem;
+    width: 1250px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.focus-point {
+    width: 95%;
+}
+
+.container, .focus-point {
+    margin: 0 auto;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 0.625rem;
+}
+
+.menu li:first-of-type {
+    margin-left: 0;
+}
+
+.menu li:last-of-type {
+    margin-right: 0;
+}
+
+.grid .card {
+    background-color: var(--eerie-black-1);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+/* Navigation bar styles */
+nav.nav-bar {
+    color: var(--cultured);
+    height: 75px;
+    justify-content: space-around;
+    position: fixed;
+    transition-property: all;
+    width: 100%;
+    z-index: 1;
+}
+
+nav.nav-bar.scrolled {
+    background-color: var(--cultured);
+    box-shadow: 0 5px 5px var(--eerie-black-1);
+    color: var(--lapis-lazuli);
+}
+
+.nav-bar a {
+    color: currentColor;
+}
+
+.nav-bar .logo {
+    text-decoration-line: none;
+}
+
+.nav-bar .logo h1 {
+    font-size: 1.75rem;
+}
+
+.nav-bar .logo img {
+    border-radius: 0.5rem;
+    display: none;
+    transition-property: background-color;
+    width: 65px;
+}
+
+.nav-bar .menu-toggle {
+    background-color: transparent;
+    border: 2.5px solid currentColor;
+    border-radius: 0.5rem;
+    color: currentColor;
+    display: none;
+    height: 45px;
+    transition-property: all;
+    width: 45px;
+}
+
+.nav-bar .menu-toggle:focus {
+    outline: none;
+}
+
+.nav-bar .menu-toggle:hover {
+    border-radius: 0.75rem;
+}
+
+/* Header styles */
+header {
+    background: center / cover no-repeat url("../assets/img/banners/TPDC_Banner.png");
+    height: 100vh;
+    width: 100%;
+}
+
+header .buttons {
+    margin: 0.25rem 0 0 0.75rem;
+    position: absolute;
+}
+
+/* Main content styles */
+section:nth-of-type(even) {
+    background-color: var(--cultured);
+    color: var(--eerie-black-2);
+}
+
+main .container {
+    padding: 75px 0 50px 0;
+}
+
+main h2 {
+    border-bottom: 1px solid;
+    margin-bottom: 1.25rem;
+}
+
+section#join {
+    background: fixed center / cover no-repeat url("../assets/img/banners/TPDC_Channel_art.png");
+}
+
+#about .staff .role {
+    color: var(--bright-navy-blue);
+}
+
+#rules ol {
+    counter-reset: li;
+    list-style: none;
+}
+
+#rules ol li {
+    counter-increment: li;
+    margin-top: 1.25rem;
+}
+
+#rules ol li::before {
+    background-color: var(--bright-navy-blue);
+    border-radius: 0.125rem;
+    color: var(--cultured);
+    content: counter(li);
+    display: inline-block;
+    font-weight: bold;
+    height: 1.125rem;
+    margin-right: 0.25rem;
+    text-align: center;
+    width: 1.125rem;
+}
+
+#join .discord {
+    display: block;
+    margin-top: 0.75rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--eerie-black-1);
+}
+
+footer .flex.container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Responsive styling */
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (max-width: 1316px) {
+    .container {
+        width: 95%;
+    }
+    
+    .nav-bar .logo h1 {
+        display: none;
+    }
+    
+    .nav-bar .logo img {
+        display: block;
+    }
+    
+    .nav-bar.scrolled .logo img {
+        background-color: var(--raisin-black);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .nav-bar .menu-toggle {
+        display: block;
+    }
+    
+    .nav-bar .menu {
+        align-items: center;
+        background-color: rgba(27, 27, 27, 0.75);
+        color: var(--cultured);
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+        position: fixed;
+        top: 75px;
+        transition-property: height;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .menu li {
+        margin: 0;
+    }
+}
