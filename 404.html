@@ -9,104 +9,35 @@
     <!-- Page title -->
     <title>Page not found</title>
     
+    <!-- Resource links -->
+    <link href="https://ThePseudoDopamineCentre.github.io/res/css/index.css" type="text/css" rel="stylesheet" />
+    
     <!-- Page-specific styling -->
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital@0;1&display=swap");
-      
-      /* Global styles */
-      * {
-          box-sizing: border-box;
-          margin: 0;
-          padding: 0;
-          transition: none 250ms ease;
+      /* Header styles */
+      header {
+          background: var(--raisin-black);
+          text-align: center;
       }
       
-      *::selection {
-          background-color: var(--blue-accent-3);
-          color: var(--white);
-      }
-      
-      :root {
-          /* Colour palettes */
-          /* Core */
-          --dark-blue: #1A1B29;
-          --dark-matte-black: #141414;
-          --light-matte-black: #1B1B1B;
-          --white: #F8F8F8;
-          --blue-accent-1: #216298;
-          --blue-accent-2: #07A6EA;
-          --blue-accent-3: #3573BD;
-          
-          /* Auxiliary */
-          --orange: #F2A043;
-          --yellow: #FAD766;
-          --purple: #8B63BE;
-      }
-      
-      html {
-          background-color: var(--dark-blue);
-          color: var(--white);
-          font: 300 20px / 1.25 Comfortaa, cursive;
-      }
-      
-      a {
-          color: var(--blue-accent-1);
-          text-decoration-line: none;
-          transition-property: all;
-      }
-      
-      a:hover {
-          color: var(--blue-accent-2);
-          text-decoration-line: underline;
-      }
-      
-      h1 {
-          font: 2.5rem / 1.25 Bungee, cursive;
-      }
-      
-      h2 {
-          font-size: 1.75rem;
-      }
-      
-      h3 {
-          font-size: 1.5rem;
-      }
-      
-      h4 {
-          font-size: 1.25rem;
-      }
-      
-      h5 {
-          font-size: 1rem;
-      }
-      
-      h6 {
-          font-size: 0.875rem;
-      }
-      
-      h2, h3, h4, h5, h6 {
-          font-family: "Roboto Mono", monospace;
-      }
-      
-      /* Main content styles */
-      main {}
-      
-      /* Responsive styling */
-      @supports (scroll-behavior: smooth) {
-          html {
-              scroll-behavior: smooth;
-          }
+      video {
+          width: 360px;
+          height: auto;
       }
     </style>
   </head>
   <body>
     <!-- Main content structure -->
-    <main>
-      <h1>Page not found</h1>
-      <p>
-        Sorry, but the page you were trying to view doesn't exist.
-        <a href="./index.html">Back to homepage</a>
-      </p>
-    </main>
+    <header class="flex">
+      <div class="container">
+        <h1>Hep-!</h1>
+        <p>Sorry, but the page you were trying to view doesn't exist.</p>
+        <a class="button" href="https://ThePseudoDopamineCentre.github.io">Back to homepage</a>
+        <hr />
+        <h2>Or...</h2>
+        <p>Have a video of Amri searching around for your term.</p>
+        <video src="./res/assets/videos/Internal_screaming.mp4" controls>Uh-oh, This video isn't supported... :(</video>
+      </div>
+    </header>
   </body>
 </html>
