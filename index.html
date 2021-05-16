@@ -38,20 +38,20 @@
       }
       
       *::selection {
-          background-color: var(--blue-accent-3);
-          color: var(--white);
+          background-color: var(--bright-navy-blue);
+          color: var(--cultured);
       }
       
       :root {
           /* Colour palettes */
           /* Core */
-          --dark-blue: #1A1B29;
-          --dark-matte-black: #141414;
-          --light-matte-black: #1B1B1B;
-          --white: #F8F8F8;
-          --blue-accent-1: #216298;
-          --blue-accent-2: #07A6EA;
-          --blue-accent-3: #3573BD;
+          --raisin-black: #1A1B29;
+          --eerie-black-1: #141414;
+          --eerie-black-2: #1B1B1B;
+          --cultured: #F8F8F8;
+          --lapis-lazuli: #216298;
+          --carolina-blue: #07A6EA;
+          --bright-navy-blue: #3573BD;
           
           /* Auxiliary */
           --orange: #F2A043;
@@ -60,19 +60,19 @@
       }
       
       html {
-          background-color: var(--dark-blue);
-          color: var(--white);
+          background-color: var(--raisin-black);
+          color: var(--cultured);
           font: 300 20px / 1.25 Comfortaa, cursive;
       }
       
       a {
-          color: var(--blue-accent-1);
+          color: var(--lapis-lazuli);
           text-decoration-line: none;
           transition-property: all;
       }
       
       a:hover {
-          color: var(--blue-accent-2);
+          color: var(--carolina-blue);
           text-decoration-line: underline;
       }
       
@@ -115,9 +115,9 @@
       }
       
       a.button {
-          background-color: var(--blue-accent-1);
+          background-color: var(--lapis-lazuli);
           border-radius: 0.5rem;
-          color: var(--white);
+          color: var(--cultured);
           display: inline-block;
           margin: 0.5rem;
           padding: 0.5rem 0.75rem;
@@ -125,21 +125,21 @@
       }
       
       a.button:hover {
-          background-color: var(--blue-accent-2);
+          background-color: var(--carolina-blue);
           border-radius: 0.75rem;
           text-decoration-line: none;
       }
       
       a.discord {
-          color: #7289DA;
+          color: #5865F2;
       }
       
       a.icon {
-          color: var(--white);
+          color: var(--cultured);
       }
       
       a.icon:hover {
-          color: var(--blue-accent-2);
+          color: var(--carolina-blue);
       }
       
       .flex {
@@ -181,14 +181,14 @@
       }
       
       .grid .card {
-          background-color: var(--dark-matte-black);
+          background-color: var(--eerie-black-1);
           border-radius: 0.5rem;
           padding: 0.75rem;
       }
       
       /* Navigation bar styles */
       nav.nav-bar {
-          color: var(--white);
+          color: var(--cultured);
           height: 75px;
           justify-content: space-around;
           position: fixed;
@@ -198,9 +198,9 @@
       }
       
       nav.nav-bar.scrolled {
-          background-color: var(--white);
-          box-shadow: 0 5px 5px var(--dark-matte-black);
-          color: var(--blue-accent-1);
+          background-color: var(--cultured);
+          box-shadow: 0 5px 5px var(--eerie-black-1);
+          color: var(--lapis-lazuli);
       }
       
       .nav-bar a {
@@ -255,8 +255,8 @@
       
       /* Main content styles */
       section:nth-of-type(even) {
-          background-color: var(--white);
-          color: var(--light-matte-black);
+          background-color: var(--cultured);
+          color: var(--eerie-black-2);
       }
       
       main .container {
@@ -273,7 +273,7 @@
       }
       
       #about .staff .role {
-          color: var(--blue-accent-3);
+          color: var(--bright-navy-blue);
       }
       
       #rules ol {
@@ -287,9 +287,9 @@
       }
       
       #rules ol li::before {
-          background-color: var(--blue-accent-3);
+          background-color: var(--bright-navy-blue);
           border-radius: 0.125rem;
-          color: var(--white);
+          color: var(--cultured);
           content: counter(li);
           display: inline-block;
           font-weight: bold;
@@ -306,7 +306,7 @@
       
       /* Footer styles */
       footer {
-          background-color: var(--dark-matte-black);
+          background-color: var(--eerie-black-1);
       }
       
       footer .flex.container {
@@ -335,7 +335,7 @@
           }
           
           .nav-bar.scrolled .logo img {
-              background-color: var(--dark-blue);
+              background-color: var(--raisin-black);
           }
       }
       
@@ -351,7 +351,7 @@
           .nav-bar .menu {
               align-items: center;
               background-color: rgba(27, 27, 27, 0.75);
-              color: var(--white);
+              color: var(--cultured);
               display: flex;
               flex-direction: column;
               height: 0;
