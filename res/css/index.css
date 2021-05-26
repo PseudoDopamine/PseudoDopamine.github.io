@@ -90,7 +90,6 @@ a.button {
     border-radius: 0.5rem;
     color: var(--cultured);
     display: inline-block;
-    margin: 0.5rem;
     padding: 0.5rem 0.75rem;
     transition-property: all;
 }
@@ -212,9 +211,16 @@ header {
     width: 100%;
 }
 
-header .buttons {
-    margin: 0.25rem 0 0 0.75rem;
-    position: absolute;
+.buttons .button {
+    margin: 0 0.5rem;
+}
+
+.buttons .button:first-of-type {
+    margin-left: 0;
+}
+
+.buttons .button:last-of-type {
+    margin-right: 0;
 }
 
 /* Main content styles */
