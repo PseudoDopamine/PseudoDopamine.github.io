@@ -186,13 +186,6 @@ nav.nav-bar.scrolled {
     font-size: 1.75rem;
 }
 
-.nav-bar .logo img {
-    border-radius: 0.5rem;
-    display: none;
-    transition-property: background-color;
-    width: 65px;
-}
-
 .nav-bar .menu-toggle {
     background-color: transparent;
     border: 2.5px solid currentColor;
@@ -295,18 +288,6 @@ footer .flex.container {
 @media only screen and (max-width: 1316px) {
     .container {
         width: 95%;
-    }
-    
-    .nav-bar .logo h1 {
-        display: none;
-    }
-    
-    .nav-bar .logo img {
-        display: block;
-    }
-    
-    .nav-bar.scrolled .logo img {
-        background-color: var(--raisin-black);
     }
 }
 
