@@ -178,11 +178,17 @@ nav.nav-bar.scrolled {
 }
 
 .nav-bar .logo {
+    font-family: Bungee;
+    font-size: 1.75rem;
+}
+
+.nav-bar .logo a {
+    display: inline-block;
     text-decoration-line: none;
 }
 
 .nav-bar .logo h1 {
-    font-size: 1.75rem;
+    font-size: 1em;
 }
 
 .nav-bar .menu-toggle {
