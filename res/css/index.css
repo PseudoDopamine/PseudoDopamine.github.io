@@ -126,7 +126,7 @@ a.icon:hover {
 .grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .focus-point {
@@ -178,11 +178,17 @@ nav.nav-bar.scrolled {
 }
 
 .nav-bar .logo {
+    font-family: Bungee;
+    font-size: 1.75rem;
+}
+
+.nav-bar .logo a {
+    display: inline-block;
     text-decoration-line: none;
 }
 
 .nav-bar .logo h1 {
-    font-size: 1.75rem;
+    font-size: 1em;
 }
 
 .nav-bar .menu-toggle {
