@@ -29,7 +29,7 @@ Community leaders have the right and responsibility to remove, edit, or reject c
 This Code of Conduct applies within all community spaces and applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 
 ## Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported to the community leaders responsible for enforcement by [E-mail](mailto:thepseudodopaminecentre@gmail.com). All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported to the community leaders responsible for enforcement by [E-mail](mailto:ThePseudoDopamineCentre@gmail.com). All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 
