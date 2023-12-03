@@ -12,12 +12,14 @@ Throughout this project's development, We'll be using the [GitFlow](https://wac-
 ## [Contributing](https://GitHub.com/PseudoDopamine/PseudoDopamine.github.io/blob/master/CONTRIBUTING.md)
 As this is our community page, We are looking to do most of the major designs ourselves, however we are open to small contributions. Please check out the link above for more info.
 
-## Authors and acknowledgements
-**Authors:**
+## Authors & acknowledgements
+### Authors:
 - Amritesh "Ary Yakos" Panda
 - Ramone "SweetBoy" Graham
-- Aaron "BurntWindow" Parmar
-- Aurora
+
+### Acknowledgements:
+- Aaron "BurntWindow" Parmar (V1 contributions)
+- Aurora (V1 contributions)
 
 ## [Licensing](https://GitHub.com/PseudoDopamine/PseudoDopamine.github.io/blob/master/LICENSE)
 This project is licensed under the GNU General Public License. More info about this can be found in the link above.
