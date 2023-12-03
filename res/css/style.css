@@ -3,11 +3,13 @@
 /* What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
 
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap");
+
 /* Base styles: opinionated defaults ======================================== */
 html {
-	color: #222;
-	font-size: 1em;
-	line-height: 1.4;
+	background-color: var(--raisin-black);
+	color: var(--seasalt-white);
+	font: 300 20px / 1.25 Comfortaa, cursive;
 }
 
 /* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
@@ -50,6 +52,80 @@ textarea {
 }
 
 /* Author's custom styles =================================================== */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: none 250ms ease;
+}
+
+:root {
+	/* Colour palette */
+	--raisin-black: #1A1B29;
+	--eerie-black: #1B1B1B;
+	--night-black: #141414;
+	--celestial-blue: #069DDF;
+	--french-blue: #2775BA;
+	--honolulu-blue: #097BB7;
+	--seasalt-white: #F8F8F8;
+}
+
+h1 {
+	font: normal 2.5em / 1 Bungee, cursive;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.75em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h6 {
+	font-size: 1.25em;
+}
+
+a {
+	color: var(--french-blue);
+	font-weight: normal;
+	transition-property: all;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:active {
+	color: var(--celestial-blue);
+}
+
+/* Layouts */
+.flex {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1250px;
+	width: 95%;
+}
+
 /* Helper classes =========================================================== */
 /* Hide visually and from screen readers */
 .hidden, [hidden] {
