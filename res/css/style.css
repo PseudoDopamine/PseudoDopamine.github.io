@@ -80,6 +80,7 @@ h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 2.25em;
+	border-bottom: 2.5px solid currentColor;
 }
 
 h3 {
@@ -215,6 +216,16 @@ header::before {
 
 header>* {
 	z-index: 1;
+}
+
+/* Main content */
+section {
+	padding: 2.5rem 0;
+}
+
+section:nth-child(even) {
+	background-color: var(--seasalt-white);
+	color: var(--eerie-black);
 }
 
 /* Helper classes =========================================================== */
