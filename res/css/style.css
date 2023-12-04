@@ -146,6 +146,21 @@ button:active {
 	width: 95%;
 }
 
+/* Components */
+nav[aria-label*="menu"] li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 .625rem;
+}
+
+nav[aria-label*="menu"] li:first-child {
+	margin-left: 0;
+}
+
+nav[aria-label*="menu"] li:last-child {
+	margin-right: 0;
+}
+
 /* Helper classes =========================================================== */
 /* Hide visually and from screen readers */
 .hidden, [hidden] {
