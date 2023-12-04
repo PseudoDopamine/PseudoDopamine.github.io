@@ -169,6 +169,7 @@ nav.bar {
 	position: fixed;
 	transition-property: all;
 	width: 100%;
+	z-index: 2;
 }
 
 nav.bar.scrolled {
@@ -192,6 +193,28 @@ nav.bar>button {
 
 nav.bar.scrolled>button:hover {
 	border-color: var(--eerie-black);
+}
+
+/* Header */
+header {
+	background: center / cover no-repeat url("../assets/img/Banner\ \(No\ text\).png");
+	height: 100vh;
+	justify-content: center !important;
+	text-align: center;
+	width: 100%;
+}
+
+header::before {
+	background-color: var(--eerie-black);
+	content: "";
+	height: 100%;
+	opacity: .5;
+	position: absolute;
+	width: 100%;
+}
+
+header>* {
+	z-index: 1;
 }
 
 /* Helper classes =========================================================== */
