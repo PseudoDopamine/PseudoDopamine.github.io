@@ -161,6 +161,39 @@ nav[aria-label*="menu"] li:last-child {
 	margin-right: 0;
 }
 
+/* Navigation bar */
+nav.bar {
+	color: var(--seasalt-white);
+	height: 75px;
+	justify-content: space-around;
+	position: fixed;
+	transition-property: all;
+	width: 100%;
+}
+
+nav.bar.scrolled {
+	background-color: var(--seasalt-white);
+	box-shadow: 0 5px 5px var(--night-black);
+	color: var(--french-blue);
+}
+
+nav.bar a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+nav.bar li:not(.logo)>a:hover {
+	text-decoration: underline;
+}
+
+nav.bar>button {
+	display: none;
+}
+
+nav.bar.scrolled>button:hover {
+	border-color: var(--eerie-black);
+}
+
 /* Helper classes =========================================================== */
 /* Hide visually and from screen readers */
 .hidden, [hidden] {
