@@ -104,13 +104,33 @@ a {
 	transition-property: all;
 }
 
+button {
+	background-color: var(--french-blue);
+	border: none;
+	border-radius: .5rem;
+	color: var(--seasalt-white);
+	font: inherit;
+	height: 2.5rem;
+	transition-property: all;
+	width: 2.5rem;
+}
+
 a:hover {
-	cursor: pointer;
 	text-decoration: none;
+}
+
+button:hover {
+	border: 2.5px solid currentColor;
+	cursor: pointer;
 }
 
 a:active {
 	color: var(--celestial-blue);
+}
+
+button:active {
+	background-color: var(--celestial-blue);
+	border-radius: .75rem;
 }
 
 /* Layouts */
