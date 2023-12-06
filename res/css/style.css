@@ -3,7 +3,7 @@
 /* What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal, Kroc Camen, and the H5BP dev community and team. */
 
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400;700&family=Roboto+Mono:ital,wght@0,700;1,700&display=swap");
 
 /* Base styles: opinionated defaults ======================================== */
 html {
@@ -273,6 +273,27 @@ section {
 section:nth-child(even) {
 	background-color: var(--seasalt-white);
 	color: var(--eerie-black);
+}
+
+#info li {
+	margin-left: 1.25em;
+}
+
+#info ol ::marker, #info .rule {
+	font-weight: bold;
+}
+
+#info ol ::marker {
+	color: var(--honolulu-blue);
+}
+
+#info .rule {
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+#info ol ul {
+	list-style: disc;
 }
 
 /* Helper classes =========================================================== */
