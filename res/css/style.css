@@ -275,25 +275,20 @@ section:nth-child(even) {
 	color: var(--eerie-black);
 }
 
-#info li {
-	margin-left: 1.25em;
-}
-
-#info ol ::marker, #info .rule {
+#info ::marker, #info li::first-line {
 	font-weight: bold;
 }
 
-#info ol ::marker {
+#info ::marker {
 	color: var(--honolulu-blue);
 }
 
-#info .rule {
-	margin-bottom: 0;
+#info li::first-line {
 	text-decoration: underline;
 }
 
-#info ol ul {
-	list-style: disc;
+#info li {
+	margin-left: 1.25em;
 }
 
 /* Helper classes =========================================================== */
