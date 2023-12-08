@@ -10,14 +10,36 @@
 		<title>Page not found</title>
 		
 		<!-- Resource links -->
-		<link href="[PUBLIC URL]/res/css/style.css" rel="stylesheet" />
+		<link href="./res/css/style.css" rel="stylesheet" />
+
+		<!-- Page-specific stylesheet -->
+		<style>
+			html {
+				text-align: center;
+			}
+
+			body {
+				height: 100vh;
+				width: 100vw;
+			}
+		</style>
 	</head>
-	<body>
+	<body class="flex">
 		<!-- SITE/APPLICATION CONTENT -->
 		<!-- Main content -->
-		<main>
+		<main class="container">
 			<h1>Page not found</h1>
-			<p>Sorry, but the page you're trying to view doesn't exist. <a href="[PUBLIC URL]">Back to home page</a></p>
+			<p>Sorry, but the page you're trying to view doesn't exist.</p>
+			<nav aria-label="404 redirect menu">
+				<ul>
+					<li>
+						<a class="button" href="https://TPDC.club">Back to home page</a>
+					</li>
+					<li>
+						<a class="button" href="https://youtu.be/AGQ4CSwb6cY">"Send help"</a>
+					</li>
+				</ul>
+			</nav>
 		</main>
 		<!-- END OF CONTENT -->
 	</body>
