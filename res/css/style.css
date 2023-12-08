@@ -10,6 +10,7 @@ html {
 	background-color: var(--raisin-black);
 	color: var(--seasalt-white);
 	font: 300 20px / 1.25 Comfortaa, cursive;
+	scroll-behavior: smooth;
 }
 
 /* Remove text-shadow in selection highlight: https://twitter.com/miketaylr/status/12228805301
@@ -324,6 +325,13 @@ footer.flex{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 1.25rem;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 15px;
+	}
 }
 
 /* Helper classes =========================================================== */
