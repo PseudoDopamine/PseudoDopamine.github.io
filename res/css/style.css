@@ -315,20 +315,20 @@ section:nth-child(even) {
 	color: var(--eerie-black);
 }
 
-#info ::marker {
+#rules ::marker {
 	color: var(--honolulu-blue);
 }
 
-#info li {
+#rules li {
 	font-weight: normal;
 	margin-left: 1.25em;
 }
 
-#info .rules ::marker, #info .rules li::first-line {
+#rules ::marker, #rules li::first-line {
 	font-weight: bold;
 }
 
-#info .rules li::first-line {
+#rules li::first-line {
 	text-decoration: underline;
 }
 
