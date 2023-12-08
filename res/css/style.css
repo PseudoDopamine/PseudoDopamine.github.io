@@ -115,6 +115,22 @@ a[href*="Discord"] {
 	color: #5865F2;
 }
 
+a[href*="Twitter"] {
+	color: #1d9bf0;
+}
+
+a[href*="Instagram"] {
+	color: #FF0169;
+}
+
+a[href*="Twitch"] {
+	color: #9146FF;
+}
+
+a[href*="YouTube"] {
+	color: #FF0000;
+}
+
 button {
 	background-color: var(--french-blue);
 	border: none;
@@ -188,17 +204,17 @@ nav[aria-label*="menu"] li:last-child {
 	margin: .25rem 0;
 }
 
-.card a {
+.card a, footer a {
 	color: var(--seasalt-white);
 	font-size: 25px;
 	line-height: 1;
 }
 
-.card a:hover {
+.card a:hover, footer a:hover {
 	color: var(--french-blue);
 }
 
-.card a:active {
+.card a:active, footer a:active {
 	color: var(--celestial-blue);
 }
 
@@ -300,6 +316,14 @@ section:nth-child(even) {
 	border: none;
 	height: 500px;
 	width: 100%;
+}
+
+/* Footer */
+footer.flex{
+	background-color: var(--night-black);
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 1.25rem;
 }
 
 /* Helper classes =========================================================== */
