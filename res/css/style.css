@@ -106,10 +106,13 @@ p {
 	margin: .5em 0;
 }
 
+a, button {
+	transition-property: all;
+}
+
 a {
 	color: var(--french-blue);
 	font-weight: normal;
-	transition-property: all;
 }
 
 a[href*="Discord"] {
@@ -132,15 +135,23 @@ a[href*="YouTube"] {
 	color: #FF0000;
 }
 
-button {
+button, a.button {
 	background-color: var(--french-blue);
-	border: none;
 	border-radius: .5rem;
 	color: var(--seasalt-white);
+}
+
+button {
+	border: none;
 	font: inherit;
+	font-weight: normal;
 	height: 2.5rem;
-	transition-property: all;
 	width: 2.5rem;
+}
+
+a.button {
+	padding: .5rem .75rem;
+	text-decoration: none;
 }
 
 a:hover {
@@ -152,11 +163,19 @@ button:hover {
 	cursor: pointer;
 }
 
+a.button:hover {
+	border: 2.5px solid var(--seasalt-white);
+}
+
 a:active {
 	color: var(--celestial-blue);
 }
 
-button:active {
+a.button:active {
+	color: var(--seasalt-white);
+}
+
+button:active, a.button:active {
 	background-color: var(--celestial-blue);
 	border-radius: .75rem;
 }
