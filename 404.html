@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    
-    <!-- Site metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Page title -->
-    <title>Page not found</title>
-    
-    <!-- Resource links -->
-    <link href="https://ThePseudoDopamineCentre.github.io/res/css/index.css" type="text/css" rel="stylesheet" />
-    
-    <!-- Page-specific styling -->
-    <style>
-      /* Header styles */
-      header {
-          background: var(--raisin-black);
-          text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Main content structure -->
-    <header class="flex">
-      <div class="container">
-        <h1>Hep-!</h1>
-        <p>Sorry, but the page you were trying to view doesn't exist.</p>
-        <div class="buttons">
-          <a class="button" href="https://ThePseudoDopamineCentre.github.io">Back to homepage</a>
-          <a class="button" href="https://youtu.be/AGQ4CSwb6cY">"Send help"</a>
-        </div>
-      </div>
-    </header>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+
+		<!-- Page metadata -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Page title -->
+		<title>Page not found</title>
+		
+		<!-- Resource links -->
+		<link href="./res/css/style.css" rel="stylesheet" />
+
+		<!-- Page-specific stylesheet -->
+		<style>
+			html {
+				text-align: center;
+			}
+
+			body {
+				height: 100vh;
+				width: 100vw;
+			}
+		</style>
+	</head>
+	<body class="flex">
+		<!-- SITE/APPLICATION CONTENT -->
+		<!-- Main content -->
+		<main class="container">
+			<h1>Page not found</h1>
+			<p>Sorry, but the page you're trying to view doesn't exist.</p>
+			<nav aria-label="404 redirect menu">
+				<ul>
+					<li>
+						<a class="button" href="https://TPDC.club">Back to home page</a>
+					</li>
+					<li>
+						<a class="button" href="https://youtu.be/AGQ4CSwb6cY">"Send help"</a>
+					</li>
+				</ul>
+			</nav>
+		</main>
+		<!-- END OF CONTENT -->
+	</body>
 </html>
