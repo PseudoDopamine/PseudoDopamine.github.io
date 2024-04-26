@@ -27,10 +27,10 @@ html {
 
 /* A better looking default horizontal rule */
 hr {
-	display: block;
-	height: 1px;
 	border: 0;
 	border-top: 1px solid currentColor;
+	display: block;
+	height: 1px;
 	margin: 1em 0;
 	padding: 0;
 }
@@ -106,13 +106,10 @@ p {
 	margin: .5em 0;
 }
 
-a, button {
-	transition-property: all;
-}
-
 a {
 	color: var(--french-blue);
 	font-weight: normal;
+	transition-property: all;
 }
 
 a[href*="Discord"] {
@@ -135,36 +132,21 @@ a[href*="YouTube"] {
 	color: #FF0000;
 }
 
-button, a.button {
+a.button {
 	background-color: var(--french-blue);
 	border-radius: .5rem;
-	color: var(--seasalt-white);
-}
-
-button {
-	border: none;
-	font: inherit;
-	font-weight: normal;
-	height: 2.5rem;
-	width: 2.5rem;
-}
-
-a.button {
-	padding: .5rem .75rem;
+	display: inline-block;
+	color: currentColor !important;
 	text-decoration: none;
+	padding: .5rem .75rem;
 }
 
 a:hover {
 	text-decoration: none;
 }
 
-button:hover {
-	border: 2.5px solid currentColor;
-	cursor: pointer;
-}
-
 a.button:hover {
-	border: 2.5px solid var(--seasalt-white);
+	border-radius: .75rem;
 }
 
 a:active {
@@ -172,12 +154,7 @@ a:active {
 }
 
 a.button:active {
-	color: var(--seasalt-white);
-}
-
-button:active, a.button:active {
 	background-color: var(--celestial-blue);
-	border-radius: .75rem;
 }
 
 /* Layouts */
@@ -275,34 +252,36 @@ nav.bar li:not(.logo)>a:hover {
 	text-decoration: underline;
 }
 
-nav.bar>button {
-	display: none;
-}
-
-nav.bar.scrolled>button:hover {
-	border-color: var(--eerie-black);
-}
-
 /* Header */
 header {
-	background: center / cover no-repeat url("../assets/img/Banner\ \(RS5).gif");
+	background: center / cover no-repeat url("../assets/img/Banner\ \(RS5\).gif");
+	flex-direction: column;
 	height: 100vh;
 	justify-content: center !important;
+	position: relative;
 	text-align: center;
 	width: 100%;
 }
 
 header::before {
-	background-color: var(--eerie-black);
+	background-color: var(--night-black);
 	content: "";
 	height: 100%;
-	opacity: .5;
+	opacity: .9;
 	position: absolute;
 	width: 100%;
 }
 
 header>* {
 	z-index: 1;
+}
+
+header>.call-to-action{
+	font-size: 1.15rem;
+}
+
+header hr {
+	width: 85%;
 }
 
 /* Main content */
