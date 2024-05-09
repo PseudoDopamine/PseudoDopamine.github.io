@@ -254,7 +254,7 @@ nav.bar li:not(.logo)>a:hover {
 
 /* Header */
 header {
-	background: center / cover no-repeat url("../assets/img/Banner\ \(RS5\).gif");
+	background: center / cover no-repeat url("../assets/img/logos/Banner\ \(No\ text\).png");
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center !important;
@@ -267,7 +267,7 @@ header::before {
 	background-color: var(--night-black);
 	content: "";
 	height: 100%;
-	opacity: .9;
+	opacity: .5;
 	position: absolute;
 	width: 100%;
 }
@@ -311,9 +311,13 @@ section:nth-child(even) {
 	text-decoration: underline;
 }
 
+#join {
+	background: fixed center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+}
+
 #join iframe {
 	border: none;
-	height: 500px;
+	height: 25rem;
 	width: 100%;
 }
 
