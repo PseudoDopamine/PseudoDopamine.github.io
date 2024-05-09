@@ -311,9 +311,13 @@ section:nth-child(even) {
 	text-decoration: underline;
 }
 
+#join {
+	background: fixed center / cover no-repeat url("../assets/img/backgrounds/Banner.png");
+}
+
 #join iframe {
 	border: none;
-	height: 500px;
+	height: 25rem;
 	width: 100%;
 }
 
