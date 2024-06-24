@@ -191,6 +191,16 @@ nav[aria-label*="menu"] li:last-child {
 	margin-right: 0;
 }
 
+.timer {
+	border-radius: .5rem;
+	margin: .5rem auto;
+	padding: .5rem;
+}
+
+.timer th+th, .timer td+td {
+	padding-left: 1.5rem;
+}
+
 .card {
 	background-color: var(--night-black);
 	border-radius: .5rem;
@@ -282,6 +292,10 @@ header>.feature {
 
 header hr {
 	width: 85%;
+}
+
+header .timer {
+	background-color: var(--raisin-black);
 }
 
 /* Main content */
