@@ -254,7 +254,7 @@ nav.bar li:not(.logo)>a:hover {
 
 /* Header */
 header {
-	background: center / cover no-repeat url("../assets/img/logos/Banner\ \(No\ text\).png");
+	background: center / cover no-repeat url("../assets/img/backgrounds/RS6\ promo.gif");
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center !important;
@@ -267,7 +267,7 @@ header::before {
 	background-color: var(--night-black);
 	content: "";
 	height: 100%;
-	opacity: .5;
+	opacity: .85;
 	position: absolute;
 	width: 100%;
 }
@@ -276,7 +276,7 @@ header>* {
 	z-index: 1;
 }
 
-header>.call-to-action{
+header>.feature {
 	font-size: 1.15rem;
 }
 
