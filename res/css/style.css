@@ -350,6 +350,12 @@ footer.flex{
 	}
 }
 
+@media only screen and (max-height: 545px) {
+	header h1, header hr {
+		display: none;
+	}
+}
+
 /* Helper classes =========================================================== */
 /* Hide visually and from screen readers */
 .hidden, [hidden] {
