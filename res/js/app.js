@@ -2,7 +2,7 @@
 const navBar = document.querySelector("nav.bar"), timerSegments = document.querySelector(".timer").querySelectorAll("td"), streamButton = document.querySelector("header .stream.button");
 
 // State management
-const featureTime = new Date("2024-06-27T22:00:00.000+01:00").getTime();
+const featureTime = new Date("2024-06-27T21:00:00.000+01:00").getTime();
 
 const updateTimer = setInterval(() => {
 	const timer = featureTime - new Date().getTime();
