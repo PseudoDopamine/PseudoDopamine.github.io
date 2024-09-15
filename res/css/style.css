@@ -263,7 +263,7 @@ nav.bar li:not(.logo)>a:hover {
 
 /* Header */
 header {
-	background: center / cover no-repeat url("../assets/img/backgrounds/RS7\ promo.gif");
+	background: center / cover no-repeat url("../assets/img/logos/Banner\ \(No\ text\).png");
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center !important;
@@ -346,12 +346,6 @@ footer.flex{
 @media only screen and (max-width: 768px) {
 	html {
 		font-size: 15px;
-	}
-}
-
-@media only screen and (max-height: 545px) {
-	header h1, header hr {
-		display: none;
 	}
 }
 
