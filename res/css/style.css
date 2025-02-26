@@ -314,8 +314,8 @@ section:nth-child(even) {
 }
 
 #about .card {
-	margin: 0 .625rem 1.25rem;
-	max-width: 325px;
+	margin-bottom: 1.25rem;
+	max-width: 500px;
 	min-width: 275px;
 	width: 100%;
 }
