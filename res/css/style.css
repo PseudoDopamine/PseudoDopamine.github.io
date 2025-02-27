@@ -307,6 +307,19 @@ section:nth-child(even) {
 	color: var(--eerie-black);
 }
 
+#about .flex {
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#about .card {
+	margin-bottom: 1.25rem;
+	max-width: 500px;
+	min-width: 275px;
+	width: 100%;
+}
+
 #rules ::marker {
 	color: var(--honolulu-blue);
 }
